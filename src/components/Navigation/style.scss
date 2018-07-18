@@ -1,0 +1,17 @@
+@import '../../scss/_shared.scss'; 
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: $navigation-height;
+    justify-content: center;
+
+    .menu-item {
+        align-self: center;
+    }
+
+}

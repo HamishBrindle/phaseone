@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css/normalize.css';
 import './index.css';
-import App from './components/App';
+import App from './scenes/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Router
