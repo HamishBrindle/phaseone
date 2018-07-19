@@ -3,10 +3,13 @@ import './style.css';
 import { Switch, Route } from 'react-router-dom'
 
 import Navigation from '../../components/Navigation'
-import Landing from '../../scenes/Landing'
-import Services from '../../scenes/Services'
-import Projects from '../../scenes/Projects'
-import Contact from '../../scenes/Contact'
+import Landing from '../Landing'
+import Projects from '../Projects'
+import Contact from '../Contact'
+import Services from '../Services'
+import Photo from '../Services/scenes/Photo'
+import Video from '../Services/scenes/Video'
+import Web from '../Services/scenes/Web'
 import NotFound from '../../components/NotFound'
 
 class App extends Component {
@@ -20,7 +23,10 @@ class App extends Component {
 
         <Switch>
           <Route exact path='/' component={Landing} />
-          <Route path='/services' component={Services} />
+          <Route exact path='/services/photo' component={Photo}/>
+          <Route exact path='/services/video' component={Video}/>
+          <Route exact path='/services/web' component={Web}/>
+          <Route exact path='/services' component={Services} />
           <Route exact path='/projects' component={Projects} />
           <Route exact path='/contact' component={Contact} />
           <Route path="*" component={NotFound} />

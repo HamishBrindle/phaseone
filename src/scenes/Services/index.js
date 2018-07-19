@@ -7,11 +7,16 @@ import { Route } from 'react-router-dom'
 import Photo from './scenes/Photo'
 import Video from './scenes/Video'
 import Web from './scenes/Web'
+import NotFound from '../../components/NotFound'
 
 export class Services extends Component {
 //   static propTypes = {
 //     prop: PropTypes
 //   }
+
+  componentDidMount() {
+    console.log(`${this.props.match.path}/photo`);
+  } 
 
   render() {
     return (
