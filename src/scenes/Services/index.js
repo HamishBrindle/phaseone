@@ -8,14 +8,11 @@ export class Services extends Component {
 //     prop: PropTypes
 //   }
 
-  componentDidMount() {
-    console.log(`${this.props.match.path}/photo`);
-  } 
 
   render() {
     return (
-      <div>
-        Services
+      <div className='wrapper'>
+        <h1>Services</h1>
       </div>
     )
   }

@@ -10,8 +10,8 @@ export class Contact extends Component {
 
   render() {
     return (
-      <div>
-        Contact
+      <div className='wrapper'>
+        <h1>Contact</h1>
       </div>
     )
   }

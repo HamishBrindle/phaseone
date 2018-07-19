@@ -10,8 +10,8 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div>
-        Projects
+      <div className='wrapper'>
+        <h1>Projects</h1>
       </div>
     )
   }

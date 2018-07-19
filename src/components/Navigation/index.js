@@ -18,21 +18,25 @@ class Navigation extends Component {
     return (
       <div className="navigation">
         <nav className='navigation-bar'>
-          <a href='/'><img src={logo} alt="Logo" className='nav-brand'/></a>
-          <button onClick={
-            (this.props.open) ? this.props.hideMenu : this.props.showMenu
-            } className='nav-menu'><FontAwesomeIcon icon="bars" color={iconColor}/></button>
-        </nav>
-        <div className={(this.props.open) ? "slider slider-active" : "slider"}>
-          <button className='btn btn-exit' onClick={this.props.hideMenu}>
-            <FontAwesomeIcon icon="times" color={iconColor}/>
+          <a href='/'><img src={logo} alt="Logo" className='nav-brand' /></a>
+          <button
+            className='nav-menu'
+            onClick={
+              (this.props.open) ? this.props.hideMenu : this.props.showMenu
+            }>
+            {
+              this.props.open ? <FontAwesomeIcon icon="times" color={iconColor} /> : <FontAwesomeIcon icon="bars" color={iconColor} />
+            }
           </button>
+        </nav>
+        <div className={(this.props.open) ? "underlay underlay-active" : "underlay"}></div>
+        <div className={(this.props.open) ? "slider slider-active" : "slider"}>
           <div className="slider-navigation">
-            <NavLink to="/" className="slider-navigation-link">Home</NavLink>
-            <NavLink to="/about" className="slider-navigation-link">About</NavLink>
-            <NavLink to="/services" className="slider-navigation-link">Services</NavLink>
-            <NavLink to="/projects" className="slider-navigation-link">Projects</NavLink>
-            <NavLink to="/contact" className="slider-navigation-link">Contact</NavLink>
+            <NavLink onClick={this.props.hideMenu} to="/" className="slider-navigation-link">Home</NavLink>
+            <NavLink onClick={this.props.hideMenu} to="/about" className="slider-navigation-link">About</NavLink>
+            <NavLink onClick={this.props.hideMenu} to="/services" className="slider-navigation-link">Services</NavLink>
+            <NavLink onClick={this.props.hideMenu} to="/projects" className="slider-navigation-link">Projects</NavLink>
+            <NavLink onClick={this.props.hideMenu} to="/contact" className="slider-navigation-link">Contact</NavLink>
           </div>
         </div>
       </div>
