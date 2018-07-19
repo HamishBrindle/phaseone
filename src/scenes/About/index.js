@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class Start extends Component {
+export class About extends Component {
 
 //   static propTypes = {
 //     prop: PropTypes
@@ -11,7 +11,7 @@ export class Start extends Component {
   render() {
     return (
       <div>
-        Start
+        About
       </div>
     )
   }
@@ -25,4 +25,4 @@ const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Start)
+export default connect(mapStateToProps, mapDispatchToProps)(About)

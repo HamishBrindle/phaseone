@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux'
-// import foo from './foo';
-//...
+import navigation from './navigation'
 
 /**
  * Reducers need to be combined into one for Redux to process them
  */
 const reducers = combineReducers({
-    // foo
-    //...
+    navigation
   });
   
 export default reducers

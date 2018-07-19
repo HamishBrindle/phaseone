@@ -1,5 +1,8 @@
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
 @import '../../scss/_shared.scss';
 
 body {
-    padding: $navigation-height 0;
+    background: $ebb-white;
+    font-family: $font-sans;
 }

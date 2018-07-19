@@ -1,3 +1,15 @@
-@import './_fonts.scss';
+@import './fonts';
+@import './colors';
 
 $navigation-height: 60px;
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.wrapper {
+    padding: $navigation-height 0 0 0;
+}

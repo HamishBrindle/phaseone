@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import './style.css'
 
 export class Landing extends Component {
 //   static propTypes = {
@@ -10,8 +11,8 @@ export class Landing extends Component {
 
   render() {
     return (
-      <div>
-        Landing
+      <div className='wrapper'>
+        <h1>Landing</h1>
       </div>
     )
   }

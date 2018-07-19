@@ -1,17 +1,106 @@
-@import '../../scss/_shared.scss'; 
+@import '../../scss/_shared.scss';
+
+body {
+    overflow-x: hidden;
+}
+
+$navigation-button-size: 33px;
 
 .navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    width: 100%;
-    height: $navigation-height;
-    justify-content: center;
 
-    .menu-item {
-        align-self: center;
+    overflow: hidden;    
+
+    .navigation-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        height: $navigation-height;
+        justify-content: space-between;
+        padding: 0 0 0 10px;
+    
+        .nav-brand {
+            width: $navigation-height;
+        }
+    
+        .nav-menu {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: $navigation-height;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: $navigation-button-size;
+            background: #1F2A36;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+        }
+    
+        .nav-menu:hover {
+            background: #1F2A36;
+            text-decoration: none;
+        }
+    
+    }
+    
+    .slider {
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: $ebony-clay;
+        transform: translate(100%);
+        transition: all 0.5s ease-in-out;
+
+        .btn-exit {
+            width: $navigation-height;
+            height: $navigation-height;
+            position: absolute;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            background: none;
+            font-size: $navigation-button-size;
+            // padding: 20px 20px 0 0;
+        }
+
+        .slider-navigation {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .slider-navigation-link {
+                font-size: 85px;
+                color: $ebb-white;
+                text-decoration: none;
+                text-transform: lowercase;
+            }
+
+            .slider-navigation-link:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+    
+    .slider-active {
+        transform: translate(0%);
+        transition: all 0.5s ease-in-out;    
     }
 
 }
+
