@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1218 504">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ddd;
+      }
+    </style>
+  </defs>
+  <g id="BACKGROUND" transform="translate(-588 -588)">
+    <path id="Union_22" data-name="Union 22" class="cls-1" d="M1512,630V252h126V630Zm-630,0V588h0v42H840V618H805V273h35V126h84V378H882v0h42V630Zm0-84v0Zm0-84v0Zm210,156V420h42v0h-42V210h126v84h-42v84h42V618Zm-672,0V420h42V252h42V618Zm806-80V370h42V538ZM420,420V252h42V420Zm756-42V336h42v42Zm0-42V294h42v42Z" transform="translate(168 462)"/>
+  </g>
+</svg>

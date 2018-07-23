@@ -1,41 +1,34 @@
 @import '../../scss/_shared.scss';
-@import '../../scss/mixins.scss';
-
+@import '../../scss/_mixins.scss';
 $min_width: 375px;
 $max_width: 1200px;
 $min_font: 16px;
 $max_font: 20px;
-
 .wrapper {
-    
     height: 100vh;
-
     .about-container {
         display: grid;
         height: 100%;
         grid-template-columns: minmax(10px, 100px) 1fr minmax(10px, 100px);
         grid-template-rows: 1fr;
         grid-template-areas: "lang main side-nav";
-    
         .lang {
             grid-area: lang;
         }
-    
         .main {
             grid-area: main;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
             .art {
                 height: 100%;
                 width: 100%;
                 margin: -60px 0 0 0;
                 max-width: $max_width;
                 min-height: 180px;
+                z-index: -2;
             }
-
             .content {
                 height: 100%;
                 width: 100%;
@@ -43,21 +36,17 @@ $max_font: 20px;
                 align-items: center;
                 justify-content: center;
                 max-width: $max_width;
-                transform: translateY(-15%);
-                
                 .content-text {
                     display: flex;
                     flex-direction: column;
                     width: 50%;
                     justify-content: flex-start;
                     padding: 0 32px 0 0;
-
                     .vertical-text-and-box {
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items: flex-start;
-
                         .vertical-text {
                             text-transform: uppercase;
                             margin: 0;
@@ -65,7 +54,6 @@ $max_font: 20px;
                             width: 20%;
                             transform: translateX(-50%) rotateZ(-90deg) translateY(50%) translateX(50%);
                         }
-    
                         .page-number-box {
                             border: 8px solid $ebony-clay;
                             width: 50px;
@@ -74,7 +62,6 @@ $max_font: 20px;
                             align-items: center;
                             justify-content: center;
                             margin: 0 0 16px 0;
-    
                             p {
                                 height: 24px;
                                 margin: 0;
@@ -85,82 +72,61 @@ $max_font: 20px;
                             }
                         }
                     }
-
                     @media screen and (max-width: 900px) {
-                
-                        .vertical-text-and-box {              
+                        .vertical-text-and-box {
                             flex-direction: row-reverse;
                             justify-content: flex-end;
                             align-items: flex-start;
-
                             .vertical-text {
                                 margin: 0 0 0 8px;
                                 transform: none;
                             }
                         }
-            
                     }
-
-
                     .page-header {
                         font-size: 72px;
                     }
-
-                    .page-content > p {
+                    .page-content>p {
                         margin: 0 0 0 10%;
-                        max-width: 600px;
-                        // @include fluid-type($min_width, $max_width, $min_font, $max_font);
+                        max-width: 600px; // @include fluid-type($min_width, $max_width, $min_font, $max_font);
                     }
-
                 }
-
                 .content-image {
                     width: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
                     .artwork {
                         width: 100%;
+                        z-index: -2;
                     }
                 }
             }
-
             @media screen and (max-width: 1200px) {
-                
                 .content {
                     flex-direction: column;
                     transform: none;
-    
                     .content-text {
                         width: 100%;
-
-                        .page-content > p {
+                        .page-content>p {
                             margin: 0;
                         }
                     }
-    
                     .content-image {
                         width: 100%;
+                        display: flex;
                         margin: 16px 0 0 0;
                         align-items: center;
                         justify-content: flex-start;
-
                         .artwork {
-                            max-width: 400px;                        
+                            max-width: 400px;
                         }
-
                     }
-    
                 }
             }
-            
         }
-    
         .side-nav {
             grid-area: side-nav;
         }
-    
     }
-
 }
