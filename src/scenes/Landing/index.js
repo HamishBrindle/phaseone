@@ -17,7 +17,7 @@ export class Landing extends Component {
   render() {
     return (
       <div className='wrapper'>
-        <div className="grid-container">
+        <div className="landing-container">
           <div className={(this.props.open) ? "art at-the-back" : "art"}>
             <div className="art-background">
               <div className="bg" >
