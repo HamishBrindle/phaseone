@@ -1,15 +1,11 @@
 @import '../../scss/_shared.scss';
-
 $navigation-button-size: 33px;
-
 body {
     overflow-x: hidden;
 }
 
 .navigation {
     z-index: 999;
-    overflow: hidden;
-
     .navigation-bar {
         position: fixed;
         top: 0;
@@ -21,39 +17,34 @@ body {
         align-content: center;
         justify-content: space-between;
         z-index: 1;
-        
+        background: white;
+        -webkit-box-shadow: 0px -12px 23px 23px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px -12px 23px 23px rgba(0,0,0,0.25);
+        box-shadow: 0px -12px 23px 23px rgba(0,0,0,0.25);
         .nav-brand {
-            padding: 10px 0 0 10px;
-            width: 50px;
+            padding: 10px;
+            width: 60px;
         }
-    
         .nav-menu {
             display: flex;
             align-content: center;
             justify-content: center;
             width: $navigation-height;
-            -webkit-border-radius: 0;
-            -moz-border-radius: 0;
-            border-radius: 0px;
-            font-family: Arial;
-            color: #ffffff;
-            font-size: $navigation-button-size;
-            background: #1F2A36;
-            padding: 10px 20px 10px 20px;
-            text-decoration: none;
+            height: $navigation-height;
             border: none;
             cursor: pointer;
         }
-    
-        .nav-menu:hover {
-            background: #1F2A36;
-            text-decoration: none;
+        .nav-menu-open {
+            width: 100%;
         }
-    
+        .nav-menu-close {
+            width: 100%;
+            padding: 17px;
+            background: $ebony-clay;
+        }
     }
-
     .underlay {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -65,24 +56,22 @@ body {
         z-index: -1;
         transition: all 0.5s ease-in-out;
     }
-
     .underlay-active {
         z-index: 0;
         opacity: 0.5;
         transition: all 0.5s ease-in-out;
     }
-    
     .slider {
-        position: absolute;
+        position: fixed;
         width: 50%;
         height: 100vh;
         top: 0;
         right: 0;
         bottom: 0;
         background: $ebony-clay;
+        font-family: $font-sans;
         transform: translate(100%);
         transition: transform 0.5s ease-in-out;
-
         .btn-exit {
             width: $navigation-height;
             height: $navigation-height;
@@ -93,10 +82,8 @@ body {
             top: 0;
             right: 0;
             background: none;
-            font-size: $navigation-button-size;
-            // padding: 20px 20px 0 0;
+            font-size: $navigation-button-size; // padding: 20px 20px 0 0;
         }
-
         .slider-navigation {
             height: 100%;
             width: 100%;
@@ -104,24 +91,24 @@ body {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
             .slider-navigation-link {
                 font-size: calc(42px + 10 * ((100vw - 320px) / 680));
                 color: $ebb-white;
                 text-transform: lowercase;
+                text-decoration: none;
             }
-            
             .slider-navigation-link:hover {
                 text-decoration: line-through;
             }
-
         }
-
     }
-    
     .slider-active {
         transform: translate(0%);
-        transition: transform 0.5s ease-in-out;    
+        transition: transform 0.5s ease-in-out;
     }
-
+    @media (max-width: 768px) {
+        .slider {
+            width: 75%;
+        }
+    }
 }

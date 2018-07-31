@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import './style.css'
+
 export class Web extends Component {
 //   static propTypes = {
 //     prop: PropTypes
@@ -10,8 +12,7 @@ export class Web extends Component {
 
   render() {
     return (
-      <div>
-        Web
+      <div className="web-container">
       </div>
     )
   }

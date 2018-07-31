@@ -5,11 +5,11 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
 // import { NavLink } from 'react-router-dom'
-import logo from '../../assets/LOGO-ICON.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { showMenu, hideMenu } from '../../redux/actions'
+import logo from '../../assets/Navigation/nav-brand.svg'
+import menu from '../../assets/Navigation/nav-menu.svg'
+import exit from '../../assets/Navigation/nav-exit.svg'
 
-const iconColor = '#F3F0F1';
+import { showMenu, hideMenu } from '../../redux/actions'
 
 class Navigation extends Component {
 
@@ -19,15 +19,18 @@ class Navigation extends Component {
       <div className="navigation">
         <nav className='navigation-bar'>
           <a href='/'><img src={logo} alt="Logo" className='nav-brand' /></a>
-          <button
+          <div
             className='nav-menu'
             onClick={
               (this.props.open) ? this.props.hideMenu : this.props.showMenu
             }>
             {
-              this.props.open ? <FontAwesomeIcon icon="times" color={iconColor} /> : <FontAwesomeIcon icon="bars" color={iconColor} />
+              this.props.open ?
+                <img className="nav-menu-close" src={exit} alt="Menu Close"/>
+                :
+                <img className="nav-menu-open" src={menu} alt="Menu Open"/>
             }
-          </button>
+          </div>
         </nav>
         <div className={(this.props.open) ? "underlay underlay-active" : "underlay"}></div>
         <div className={(this.props.open) ? "slider slider-active" : "slider"}>

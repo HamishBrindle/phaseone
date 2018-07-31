@@ -23,23 +23,18 @@ library.add(faBars)
 class App extends Component {
   render() {
     return (
-      <div>
-
+      <div className="app">
+        <div className="wrapper parallax">
+          <Landing />
+          <About />
+          <Services />
+          <Photo />
+          <Video />
+          <Web />
+          <Projects />
+          <Contact />
+        </div>
         <Navigation />
-        <main>
-          <Switch>
-            <Route exact path='/' component={Landing} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/services/photo' component={Photo}/>
-            <Route exact path='/services/video' component={Video}/>
-            <Route exact path='/services/web' component={Web}/>
-            <Route exact path='/services' component={Services} />
-            <Route exact path='/projects' component={Projects} />
-            <Route exact path='/contact' component={Contact} />
-            <Route path="*" component={NotFound} />
-          </Switch>
-        </main>
-
       </div>
     );
   }

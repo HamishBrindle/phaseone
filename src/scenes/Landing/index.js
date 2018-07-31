@@ -4,9 +4,18 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import './style.css'
 
-import background from '../../assets/Landing/BACKGROUND.svg'
-import midground from '../../assets/Landing/MIDGROUND.svg'
-import foreground from '../../assets/Landing/FOREGROUND.svg'
+import header from '../../assets/Landing/landing-title.svg'
+import subheader from '../../assets/Landing/landing-subtitle.svg'
+import farSlant from '../../assets/Landing/far-slant.svg'
+import farBuildings from '../../assets/Landing/far-buildings.svg'
+import midBuildings from '../../assets/Landing/mid-buildings.svg'
+import frontBuildings from '../../assets/Landing/front-buildings.svg'
+
+// Single Buildings
+import buildingBeige from '../../assets/Landing/building-beige.svg'
+import buildingBlue from '../../assets/Landing/building-blue.svg'
+import buildingGrey from '../../assets/Landing/building-grey.svg'
+import buildingGreen from '../../assets/Landing/building-green.svg'
 
 export class Landing extends Component {
 
@@ -16,36 +25,23 @@ export class Landing extends Component {
 
   render() {
     return (
-      <div className='wrapper'>
-        <div className="landing-container">
-          <div className={(this.props.open) ? "art at-the-back" : "art"}>
-            <div className="art-background">
-              <div className="bg" >
-                <img src={background} alt="Background Art 1" />
-              </div>
-              <div className="mg" >
-                <img src={midground} alt="Background Art 2" />
-              </div>
-              <div className="fg" >
-                <div className="fg-interacts">
-                  <div className="fg-interact-1"></div>
-                  <div className="fg-interact-2"></div>
-                  <div className="fg-interact-3"></div>
-                  <div className="fg-interact-4"></div>
-                </div>
-                <img src={foreground} alt="Background Art 3" />
-              </div>
-            </div>
+      <div className="landing-container parallax__group">
+        <div className="header">
+          <img className="header-title" src={header} alt="Header"/>
+          <img className="header-subtitle" src={subheader} alt="Subheader"/>
+        </div>
+        <div className="art parallax__layer parallax__layer--base parallax__group">
+          <img className="far-slant" src={farSlant} alt="Far Slant"/>
+          <img className="parallax__layer--deep far-buildings" src={farBuildings} alt="Far Buildings"/>
+          <img className="parallax__layer--back mid-buildings" src={midBuildings} alt="Mid Buildings"/>
+          <div className="colored-buildings parallax__layer--base">
+            <img className="grey" src={buildingGrey} alt="Grey Building"/>
+            <img className="green" src={buildingGreen} alt="Green Building"/>
+            <img className="blue" src={buildingBlue} alt="Blue Building"/>
+            <img className="beige" src={buildingBeige} alt="Beige Building"/>
           </div>
-          <div className={(this.props.open) ? "header at-the-back" : "header"}>
-            <div className="header-content">
-              <h1 className="header-title">PHASE ONE</h1>
-              <h3 className="subheader-1">Helping you pick</h3>
-              <h3 className="subheader-2">a new direction</h3>
-            </div>
-          </div>
-          <div className="lang">
-          </div>
+          <img className="front-buildings" src={frontBuildings} alt="Front Buildings"/>
+          {/* <img className="front-slant" src={frontSlant} alt="Front Slant" /> */}
         </div>
       </div>
     )

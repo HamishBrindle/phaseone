@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1463 813">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3f0f1;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+  <g id="pixels-midground" transform="translate(-5 209)">
+    <rect id="Rectangle_328" data-name="Rectangle 328" class="cls-1" width="64" height="64" transform="translate(1248 400)"/>
+    <rect id="Rectangle_348" data-name="Rectangle 348" class="cls-1" width="64" height="64" transform="translate(326 409)"/>
+    <rect id="Rectangle_329" data-name="Rectangle 329" class="cls-1" width="64" height="64" transform="translate(854 540)"/>
+    <rect id="Rectangle_330" data-name="Rectangle 330" class="cls-1" width="64" height="64" transform="translate(5 -209)"/>
+    <rect id="Rectangle_339" data-name="Rectangle 339" class="cls-1" width="64" height="64" transform="translate(1404 -133)"/>
+  </g>
+</svg>

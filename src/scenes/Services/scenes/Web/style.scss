@@ -1,0 +1,8 @@
+@import '../../../../scss/_shared.scss';
+@import '../../../../scss/_mixins.scss';
+
+.web-container {
+    height: 100vh;
+    background: $blue-bayoux;
+    position: relative;
+}

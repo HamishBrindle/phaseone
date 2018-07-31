@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import './style.css'
+
 export class Projects extends Component {
 //   static propTypes = {
 //     prop: PropTypes
@@ -10,8 +12,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div className='wrapper'>
-        <h1>Projects</h1>
+      <div className='dope-bg projects-container'>
       </div>
     )
   }

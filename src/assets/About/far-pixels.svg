@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 360">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #979696;
+        opacity: 0.25;
+      }
+    </style>
+  </defs>
+  <path id="far-pixels" class="cls-1" d="M-2514,360V320h40v40Zm-360,0V320h-40V280h40v40h40v40Zm-640,0V320h40v40Zm-600,0V320h40v40Zm840-40V280h40v40Zm720-40V240h40v40Zm-920,0V240h40v40Zm-600-40V200h40v40Zm1160-40V160h40v40Zm40-40V120h40v40Zm360-40V40h40v80Zm-800-80V0h40V40Z" transform="translate(4114)"/>
+</svg>

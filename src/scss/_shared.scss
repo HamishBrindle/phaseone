@@ -1,15 +1,5 @@
 @import './fonts';
 @import './colors';
+@import './mixins';
 
 $navigation-height: 60px;
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-    outline: none;
-}
-
-.wrapper {
-    padding: $navigation-height 0 0 0;
-}

@@ -3,15 +3,16 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-// Art Components
-import Background from './Art/Background'
-import Building2 from './Art/Building2'
-import Building3 from './Art/Building3'
-import Building4 from './Art/Building4'
-import Close from './Art/Close'
-import Far from './Art/Far'
-import Gears from './Art/Gears'
-import Midground from './Art/Midground'
+import artwork from '../../assets/Services/services-gears.svg'
+import closePixels from '../../assets/Services/pixels-close.svg'
+import farPixels from '../../assets/Services/pixels-far.svg'
+
+import farBuildings from '../../assets/Services/far-buildings.svg'
+import midBuildings from '../../assets/Services/mid-buildings.svg'
+import frontBuildings from '../../assets/Services/front-buildings.svg'
+import green from '../../assets/Services/building-green.svg'
+import blue from '../../assets/Services/building-blue.svg'
+import beige from '../../assets/Services/building-beige.svg'
 
 import './style.css'
 
@@ -32,54 +33,36 @@ export class Services extends Component {
 
   render() {
     return (
-      <div className='wrapper'>
-        <div className="services-grid-container">
-          <div className="lang">
+      <div className="dope-bg services-container parallax__group">
+        <div className="top-art parallax__layer parallax__layer--close parallax__group">
+          <img className="art-close-pixels" src={closePixels} alt="Close Pixels"/>
+          <img className="art-far-pixels" src={farPixels} alt="Close Pixels"/>
+        </div>
+        <div className="bottom-art">
+          <img className="far-buildings" src={farBuildings} alt=""/>
+          <img className="mid-buildings" src={midBuildings} alt=""/>
+          <img className="front-buildings" src={frontBuildings} alt="Front Buildings"/>
+          <div className="colored-buildings">
+            <img className="colored-building green" src={green} alt="Green Building"/>
+            <img className="colored-building blue" src={blue} alt="Blue Building"/>
+            <img className="colored-building beige" src={beige} alt="Beige Building"/>
           </div>
-          <div className="content">
-            <div className="content-top-bottom">
-              <div className="top">
-                <div className="top-art">
-                  <Close id="close"/>
-                  <Far id="far"/>
-                </div>
-                <div className="top-left">
-                  <div className="vertical-text-and-box">
-                    <p className="vertical-text">WHAT WE DO</p>
-                    <div className="page-number-box"><p>02</p></div>
-                  </div>
-                  <h1 className="page-header">SERVICES</h1>
-                  <div className="page-content">
-                    <p>
-                      We offer a wide range of services and expertise. With Phase One,
-                      the look and feel of your product will remain constant across the board,
-                      giving a cohesive and complete final product.
-                    </p>
-                  </div>
-                </div>
-                <div className="top-right">
-                  <Gears />
-                </div>
+        </div>
+        <div className="content parallax__layer--base">
+          <img className="content-artwork" src={artwork} alt="Artwork" />
+          <div className="content-text">
+              <div className="page-indicator">
+                  WHAT WE DO
               </div>
-              <div className="bottom">
-                <div className="background">
-                  <Background className="background-1"/>
-                  <Midground className="background-2"/>
-                </div>
-                <div className="buildings">
-                  <Building2 className="building-2"/>
-                  <Building3 className="building-3" />
-                  <Building4 className="building-4" />
-                </div>
-                <div className="building-labels">
-                  <p onClick={this.clicked} className="label-2">PHOTO</p>
-                  <p className="label-3">VIDEO</p>
-                  <p className="label-4">WEB</p>
-                </div>
+              <h2 className="page-header">SERVICES</h2>
+              <div className="page-number">
+                  02
               </div>
-            </div>
-          </div>
-          <div className="sidebar">
+              <p className="page-content">
+                We offer a wide range of services and expertise. With Phase One, 
+                the look and feel of your product will remain constant across the 
+                board, giving a cohesive and complete final product.
+              </p>
           </div>
         </div>
       </div>

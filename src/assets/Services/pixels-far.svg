@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1777.857 486.416">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a3a097;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        fill: #455c76;
+      }
+
+      .cls-3 {
+        fill: #455c5b;
+      }
+
+      .cls-4 {
+        fill: #8c99a5;
+      }
+    </style>
+  </defs>
+  <g id="pixels-far" transform="translate(0 0)">
+    <rect id="Rectangle_324" data-name="Rectangle 324" class="cls-1" width="31.747" height="31.747" transform="translate(1746.109 196.154)"/>
+    <rect id="Rectangle_323" data-name="Rectangle 323" class="cls-2" width="31.747" height="31.747" transform="translate(1119.097 281.192)"/>
+    <rect id="Rectangle_318" data-name="Rectangle 318" class="cls-3" width="34.015" height="34.015" transform="translate(487.55 51.023)"/>
+    <rect id="Rectangle_327" data-name="Rectangle 327" class="cls-4" width="31.747" height="31.747" transform="translate(291.396)"/>
+    <rect id="Rectangle_320" data-name="Rectangle 320" class="cls-4" width="31.747" height="31.747" transform="translate(0 454.669)"/>
+  </g>
+</svg>

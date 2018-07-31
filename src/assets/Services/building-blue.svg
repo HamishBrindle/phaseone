@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 258 538">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #455c76;
+      }
+
+      .cls-2 {
+        filter: url(#building-blue);
+      }
+    </style>
+    <filter id="building-blue" x="0" y="0" width="258" height="538" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="building-blue-2" data-name="building-blue" class="cls-1" d="M-3834.425,570.591h-240v-174.8l63.917-209.062L-3834.425,412.1V570.59Zm0-184.481-60.213-77.07,60.213-7.393v84.463Zm-240-45.05h0V104.913l51.891,66.417-51.889,169.722Zm168.292-46.728h0L-4004.8,168.043l35.909-117.453h134.463V285.526l-71.706,8.8Zm-110.692-141.678v0h0l-57.6-73.726V50.59h88.8l-31.2,102.06v0h0v0Z" transform="translate(4083.42 -44.59)"/>
+  </g>
+</svg>
