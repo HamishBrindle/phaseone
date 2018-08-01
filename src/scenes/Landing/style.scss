@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .front-buildings {
-            transform: translateY(60%) translateZ(0.2px) scale(0.9);
+            transform: translateY(60%) translateZ(0.15px) scale(0.9);
         }
 
     }
@@ -77,4 +77,22 @@ h1, h2, h3, h4, h5, h6 {
         position: absolute;
         bottom: 0;
     }
+
+    @media (max-width: 1200px) {
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 375px) {
+        .art {
+            .far-buildings {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(140%) translateX(-5%) translateZ(-1px) scaleX(1.5) scaleY(1.25);
+            }
+            .front-buildings {
+                transform: translateY(60%) translateZ(0.15px) scaleX(0.9) scaleY(0.5);
+            }
+        }
+    }
 }
+

@@ -3,14 +3,18 @@
 .video-container {
     background: $dawn;
     position: relative;
+    min-height: 768px;        
     .art {
         position: absolute;
+        min-width: 700px;
         width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         right: 0;
         z-index: 0;
         pointer-events: none;
+        object-fit: cover;
         img {
             position: absolute;
             left: 50%;
@@ -18,9 +22,11 @@
         }
         .art-close-pixels {
             width: 75%;
+            height: 100%;
             top: 40px;
         }
         .art-far-pixels {
+            height: 100%;
             width: 90%;
             top: 65px;
         }
@@ -80,6 +86,7 @@
             width: 35%;
             min-width: 320px;
             margin-left: 5%;
+            object-fit: cover;
         }
     } // Laptop Screen
 }
@@ -93,6 +100,7 @@
             .content-text {
                 margin-right: 0;
                 width: 60%;
+                height: 50%;
                 p {
                     font-size: calc(100vw / 50);
                     font-weight: 400;
@@ -112,6 +120,7 @@
             }
             .content-artwork {
                 width: 60%;
+                height: 50%;                
                 margin-left: 0;
             }
         }
@@ -119,13 +128,26 @@
 } // iPad
 @media (max-width: 768px) {
     .video-container {
-        height: 160vh;
+        height: 120vh;
         .content {
             .content-text {
                 p {
                     font-size: 16px;
                     font-weight: 400;
                 }
+            }
+            .content-artwork {
+                max-width: 310px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .video-container {
+        height: 120vh;
+        .content {
+            .content-artwork {
+                max-width: 310px;
             }
         }
     }
