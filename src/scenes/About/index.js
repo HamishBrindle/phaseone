@@ -21,11 +21,9 @@ export class About extends Component {
 
     render() {
         return (
-            <div className="dope-bg about-container">
+            <div id="about" className="dope-bg about-container">
                 <img className="front-slant" src={frontSlant} alt="Front Slant" />
                 <div className="art">
-                    {/* <img className="far-pixels parallax__layer parallax__layer--deep" src={farPixels} alt="Far Pixels" />
-                    <img className="mid-pixels parallax__layer parallax__layer--back" src={midPixels} alt="Mid Pixels" /> */}
                     <div className="front-pixels parallax__layer parallax__layer--base">
                         <img src={grey} alt="Grey Pixels" />
                         <img src={green} alt="Green Pixels" />
@@ -33,25 +31,30 @@ export class About extends Component {
                         <img src={beige} alt="Beige Pixels" />
                     </div>
                 </div>
-                <div className="content">
-                    <div className="content-text">
-                        <div className="page-indicator">
-                            LET'S BEGIN
+                <div className="content flex-center">
+                    <div className="content-section">
+                        <div className="content-section-indicator">
+                            <div className="description">
+                                LET'S BEGIN
+                            </div>
+                            <div className="number">
+                                01
+                            </div>
                         </div>
-                        <h2 className="page-header">BUILDING BLOCKS</h2>
-                        <div className="page-number">
-                            01
+                        <h2 className="content-section-header">BUILDING BLOCKS</h2>
+                        <div className="content-section-body">
+                            <p>
+                                Phase One is a marketing firm based out of Vancouver, Canada. Our primary purpose
+                                is bringing an elegant suite of design-tools and services to new companies,
+                                developments, and brands to help find an identity that suits their needs.
+                                <br /><br />
+                                Think of our services like the first building blocks of your company's future!
+                            </p>
                         </div>
-                        <p className="page-content">
-                            Phase One is a marketing firm based out of Vancouver, Canada. Our primary purpose
-                            is bringing an elegant suite of design-tools and services to new companies,
-                            developments, and brands to help find an identity that suits their needs.
-                            <br /><br />
-                            Think of our services like the first building blocks of your company's future!
-                        </p>
-
                     </div>
-                    <img className="content-artwork" src={artwork} alt="Artwork" />
+                    <div className="artwork">
+                        <img className="content-artwork" src={artwork} alt="Artwork" />
+                    </div>
                 </div>
             </div>
         )

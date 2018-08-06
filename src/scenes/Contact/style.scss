@@ -1,7 +1,74 @@
 @import '../../scss/_shared.scss';
-
 .contact-container {
-    height: 100vh;
+    // Our entire contact section (wrapper)
     background-color: $ebb-white;
     position: relative;
+}
+
+.content-section {
+    .content-section-body {
+        .our-info {
+            display: flex;
+            flex-direction: column;
+            .info {
+                margin: 1em 0;
+                .title {
+                    font-weight: 700;
+                }
+                .body {
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+}
+
+.contact-form {
+    width: 35%;
+    max-width: 600px;
+    padding: 16px 0;
+    .contact-form-submit {
+        width: 100%;
+    }
+}
+
+.underline {
+    margin: 0 0 2rem;
+    .form-control {
+        background: none;
+        color: $ebony-clay;
+        caret-color: $ebony-clay;
+        border: 4px $ebony-clay solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        line-height: 1.5em;
+    }
+    label {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-form {
+        width: 100%;
+        margin: 16px 0 0 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .content-section {
+        .content-section-body {
+            .our-info {
+                flex-direction: column;
+            }
+        }
+    }
 }

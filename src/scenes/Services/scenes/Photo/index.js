@@ -18,30 +18,33 @@ export class Photo extends Component {
 
   render() {
     return (
-      <div id="photo" className="photo-container parallax__group">
-        <ServicesNavigation className="parallax__layer parallax__layer--base" parent="photo"/>
-        <div className="art parallax__layer parallax__layer--close parallax__group">
-          <img className="art-far-pixels" src={farPixels} alt="Far Pixels" />
-          <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
-        </div>
-        <div className="content parallax__layer parallax__layer--base">
-          <div className="content-text">
-            <div className="page-indicator">
-              SERVICES
+      <div id="photo" className="photo-container">
+        {/* <ServicesNavigation parent="photo" /> */}
+        {/* <img className="art-far-pixels" src={farPixels} alt="Far Pixels" />
+        <img className="art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
+        <div className="content flex-center">
+          <div className="content-section text-light">
+            <div className="content-section-indicator">
+              <div className="description">
+                SERVICES
               </div>
-            <h2 className="page-header">PHOTO</h2>
-            <div className="page-number">
-              3.1
+              <div className="number">
+                3.1
               </div>
-            <p className="page-content">
-              Phase One photography will capture what it is that embodies
-              your brand as we venture into what makes your company unique.
-              A unique look comes recognizable features, and with that we have
-              identity. Identity will keep them coming back.
+            </div>
+            <h2 className="content-section-header">PHOTO</h2>
+            <div className="content-section-body">
+              <p>
+                Phase One photography will capture what it is that embodies
+                your brand as we venture into what makes your company unique.
+                A unique look comes recognizable features, and with that we have
+                identity. Identity will keep them coming back.
               </p>
-
+            </div>
           </div>
-          <img className="content-artwork" src={artwork} alt="Artwork" />
+          <div className="artwork">
+            <img className="content-artwork" src={artwork} alt="Artwork" />
+          </div>
         </div>
       </div>
     )

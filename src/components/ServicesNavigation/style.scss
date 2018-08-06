@@ -1,18 +1,17 @@
 @import '../../scss/_shared.scss';
 .services-navigation {
-    position: absolute;
-    z-index: 999;
-    bottom: 2em;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0 0 48px 0;
     .navigation {
         display: flex;
         justify-content: center;
         align-items: center;
         .navigation-items {
+            position: relative;
             width: 320px;
             display: flex;
             justify-content: space-between;
+            padding: 0;
             li {
                 list-style: none;
                 a {
@@ -33,7 +32,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-2px);
-    left: 40px;
+    left: 0;
     right: 0;
     width: 60px;
     height: 2px;
@@ -45,7 +44,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-2px);
-    left: 160px;
+    left: 140px;
     right: 0;
     width: 60px;
     height: 2px;
@@ -66,6 +65,8 @@
 
 @media (max-width: 768px) {
     .services-navigation {
-        display: none;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
     }
 }

@@ -17,7 +17,7 @@ class Navigation extends Component {
 
     return (
       <div className="navigation">
-        <nav className='navigation-bar'>
+        <nav className='navigation-bar going-dark'>
           <a href='/'><img src={logo} alt="Logo" className='nav-brand' /></a>
           <div
             className='nav-menu'

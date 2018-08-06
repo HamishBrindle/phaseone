@@ -18,31 +18,35 @@ export class Web extends Component {
 
   render() {
     return (
-      <div id="web" className="web-container parallax__group">
-        <ServicesNavigation className="parallax__layer parallax__layer--base" parent="web" />
-        <div className="art parallax__layer parallax__layer--close parallax__group">
-          <img className="art-far-pixels" src={farPixels} alt="Far Pixels" />
-          <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
-        </div>
-        <div className="content parallax__layer parallax__layer--base">
-          <div className="content-text">
-            <div className="page-indicator">
-              SERVICES
+      <div id="web" className="web-container">
+        {/* <ServicesNavigation parent="web" /> */}
+        {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
+        <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
+        <div className="content flex-center">
+          <div className="content-section text-left text-light">
+            <div className="content-section-indicator">
+              <div className="description">
+                SERVICES
               </div>
-            <h2 className="page-header">WEB DESIGN</h2>
-            <div className="page-number">
-              3.3
+              <div className="number">
+                3.3
               </div>
-            <p className="page-content">
-              A website is crucial in the gaining and maintaining of customers - 
-              it's your companies portal to the world! Therefore its of the utmost 
-              importance you 'wow' everyone who comes through, all the while educating 
-              them on your business and what it is you can do for them. We can help with this.
-            </p>
-
+            </div>
+            <h2 className="content-section-header">WEB DESIGN</h2>
+            <div className="content-section-body">
+              <p>
+                A website is crucial in the gaining and maintaining of customers - 
+                it's your companies portal to the world! Therefore its of the utmost 
+                importance you 'wow' everyone who comes through, all the while educating 
+                them on your business and what it is you can do for them. We can help with this.
+              </p>
+            </div>
           </div>
-          <img className="content-artwork" src={artwork} alt="Artwork" />
-        </div>
+          <div className="artwork">
+            {/* <div className="underlay drop-shadow-far"></div> */}
+            <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
+          </div>
+        </div> 
       </div>
     )
   }

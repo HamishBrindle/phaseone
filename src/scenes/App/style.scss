@@ -1,25 +1,25 @@
 // Bootstrap
 // @import 'node_modules/bootstrap/scss/bootstrap';
 @import '../../scss/_shared.scss';
-
 html {
-    /* border-box box model allows us to add padding and border to our elements without increasing their size */
-    box-sizing: border-box;
-    /* A system font stack so things load nice and quick! */
-    font-family: $font-sans;
-    color: $ebony-clay;
-  }
-  
-  /*
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: $font-sans;
+  color: $ebony-clay;
+}
+
+/*
     WAT IS THIS?!
     We inherit box-sizing: border-box; from our <html> selector
     Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
   */
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: $font-sans;
@@ -32,10 +32,72 @@ p {
   line-height: 1.75em;
 }
 
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 .dope-bg {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='902' height='902' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23ccc9ca' stroke-width='1' stroke-opacity='0.2'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
   background-size: auto auto;
 }
+
+/* Page Content
+--------------------------------------------------------------------------------------------------------------*/
+
+.wrapper > div:not(:first-child) {
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  // All content of contact page: text and form
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.content-section {
+  width: 35%;
+  max-width: 600px;
+  .content-section-indicator {
+    position: relative;
+    margin: 0 0 1.25rem 0;
+    .description {
+      text-align: right;
+      position: absolute;
+      top: 5px;
+      left: -5px;
+      letter-spacing: 0.25em;
+      font-size: 0.85em;
+      transform: translateX(-100%) translateY(-100%);
+    }
+    .number {
+      display: inline;
+      border: 5px $ebony-clay solid;
+      padding: 0.5em;
+      font-weight: 700;
+    }
+  }
+  .content-section-header {
+    font-size: calc(40vw / 14);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .content-section-body {
+    margin: 0 0 0 4.25rem;
+    p {
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Parallax Stuff 
+--------------------------------------------------------------------------------------------------------------*/
 
 .parallax {
   perspective: 1px;
@@ -43,6 +105,7 @@ p {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -50,12 +113,19 @@ p {
   bottom: 0;
   left: 0;
 }
-.parallax__layer--close {
-  transform: translateZ(0.25px);
+
+.parallax__layer--closer {
+  transform: translateZ(0.3px) scale(0.55);
 }
+
+.parallax__layer--close {
+  transform: translateZ(0.15px);
+}
+
 .parallax__layer--base {
   transform: translateZ(0);
 }
+
 .parallax__layer--back {
   transform: translateZ(-0.25px) scale(1.25);
 }
@@ -70,9 +140,115 @@ p {
   transform-style: preserve-3d;
 }
 
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-    outline: none;
+/* Misc
+--------------------------------------------------------------------------------------------------------------*/
+
+.drop-shadow-far {
+  -webkit-box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
+}
+
+.drop-shadow-close {
+  -webkit-box-shadow: 8px 11px 20px -6px rgba(56, 56, 56, 0.59);
+  -moz-box-shadow: 8px 11px 20px -6px rgba(56, 56, 56, 0.59);
+  box-shadow: 8px 11px 20px -6px rgba(56, 56, 56, 0.59);
+}
+
+.button-dark {
+  border: 4px solid $ebony-clay;
+  background: $ebony-clay;
+  color: $ebb-white;
+  min-height: 50px;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-dark:hover {
+  color: $ebony-clay;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-light {
+  * {
+    color: $ebb-white;
+  }
+  .content-section-indicator {
+    .number {
+      border-color: $ebb-white;
+    }
+  }
+}
+
+.text-right {
+  flex-direction: row-reverse;
+  .content-section {
+    .content-section-indicator {
+      .description {
+        text-align: left;
+        left: 5px;
+        transform: translateX(50%) translateY(-100%);
+      }
+    }
+  }
+}
+
+/* Media Query Stuff
+--------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+  .content-section {
+    width: 100%;
+    .content-section-indicator {
+      display: inline;
+      .description {
+        width: 200px;
+        text-align: right;
+        transform: translateX(-40%) translateY(200%) rotateZ(-90deg) translateX(-50%);
+      }
+    }
+    .content-section-header {
+      display: inline;
+      font-size: 32px;
+      padding: 0 0 0 8px;
+    }
+    .content-section-body {
+      .our-info {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+  .text-right {
+    flex-direction: column;
+    .content-section {
+      .content-section-indicator {
+        .description {
+          text-align: right;
+          left: 0;
+          transform: translateX(-40%) translateY(200%) rotateZ(-90deg) translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .content-section {
+    .content-section-body {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 }

@@ -18,31 +18,32 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" className='dope-bg projects-container parallax__group'>
-        <div className="art parallax__layer parallax__layer--close parallax__group">
-          <img className="art-far-pixels" src={farPixels} alt="Far Pixels" />
-          <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
-        </div>
-        <div className="content parallax__layer parallax__layer--base">
-          <div className="content-text">
-            <div className="page-indicator">
-              THE WORK
-              </div>
-            <h2 className="page-header">PROJECTS</h2>
-            <div className="page-number">
-              04
-              </div>
-            <p className="page-content">
-              Have a look at our projects. We've curated a wide variety of work we feel proud of.
-              Now that you're here, maybe we can talk about something new.
-              We're always excited to talk about new ideas!
-            </p>
-            <button className="btn-view-projects">view projects ></button>
+      <div id="projects" className='dope-bg projects-container'>
+        {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
+        <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
+        <div className="content flex-center text-right">
+          <div className="content-section">
+            <div className="content-section-indicator">
+              <div className="description">
+                THE WORK
+            </div>
+              <div className="number">
+                04
+            </div>
+            </div>
+            <h2 className="content-section-header">PROJECTS</h2>
+            <div className="content-section-body">
+              <p>
+                Have a look at our projects. We've curated a wide variety of work we feel proud of.
+                Now that you're here, maybe we can talk about something new.
+                We're always excited to talk about new ideas!
+              </p>
+            </div>
           </div>
           <div className="artwork">
-            <img className="artwork1" src={artwork1} alt="Artwork" />
-            <img className="artwork2" src={artwork2} alt="Artwork" />
-            <img className="artwork3" src={artwork3} alt="Artwork" />
+            <img className="artwork-1" src={artwork1} alt="Artwork 1" />
+            <img className="artwork-2" src={artwork2} alt="Artwork 2" />
+            <img className="artwork-3" src={artwork3} alt="Artwork 3" />
           </div>
         </div>
       </div>

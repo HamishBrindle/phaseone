@@ -21,9 +21,9 @@ export class ServicesNavigation extends Component {
       <div className="services-navigation">
         <div className="navigation">
             <ul className="navigation-items">
-                <li className="navigation-item"><a className={this.state.parent === 'photo' ? "photo-strike" : ""} href="#photo">PHOTO</a></li>
-                <li className="navigation-item"><a className={this.state.parent === 'video' ? "video-strike" : ""} href="#video">VIDEO</a></li>
-                <li className="navigation-item"><a className={this.state.parent === 'web' ? "web-strike" : ""} href="#web">WEB</a></li>
+                <li className="navigation-item"><a className={this.state.parent === 'photo' ? "strike photo-strike" : ""} href="#photo">PHOTO</a></li>
+                <li className="navigation-item"><a className={this.state.parent === 'video' ? "strike video-strike" : ""} href="#video">VIDEO</a></li>
+                <li className="navigation-item"><a className={this.state.parent === 'web' ? "strike web-strike" : ""} href="#web">WEB</a></li>
             </ul>
         </div>
       </div>
