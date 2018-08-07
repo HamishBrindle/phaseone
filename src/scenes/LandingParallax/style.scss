@@ -1,6 +1,10 @@
 @import '../../scss/shared';
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $ebony-clay;
     text-transform: uppercase;
     font-weight: 700;
@@ -9,94 +13,67 @@ h1, h2, h3, h4, h5, h6 {
 .landing-container {
     position: relative;
     height: 100vh;
-    transform-style: preserve-3d;
+    width: 100vw; 
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-items: start;
     .header {
-        width: 80%;
-        height: 50vh;
-        display: flex;
-        transform: translateY(-150%) scale(3) translateZ(-2px);
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        margin-left: 10%;
-        
-        .header-title {
-            width: 80%;
-            min-width: 250px;
-        }
-        .header-subtitle {
-            margin-top: -2%;
-            width: 25%;
-            min-width: 150px;
+        margin-top: 80px;
+        padding: 5%;
+        height: 60vh;
+        width: 90vw;
+        div {
+            div {
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
     }
-    .art {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        
-        .far-slant {
+    .artwork {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
             width: 100%;
-            transform: translateY(150%) translateZ(-1.25px) scale(3) ;
+            height: 100%;
         }
-
-        .far-buildings {
+        .art {
             position: absolute;
             bottom: 0;
-            transform: translateY(100%) translateX(-5%) translateZ(-1px) scaleX(1.5) scaleY(2);
+            left: 0;
+            right: 0;
         }
-
-        .mid-buildings {
-            transform: translateY(100%) translateZ(-0.5px) scaleX(1.5) scaleY(2);
+        .grey {
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
         }
-
-        .colored-buildings {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
+        .foreground {
+            width: 80%;
+        }
+        .colored {
             display: flex;
-            align-items: end;
+            width: 100%;
             justify-content: space-between;
+            align-items: flex-end;
             padding: 0 10% 0 10%;
-
             img {
                 width: 20%;
             }
         }
-
-        .front-buildings {
-            transform: translateY(60%) translateZ(0.15px) scale(0.9);
-        }
-
     }
-
-    .art > * {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .train {
-        width: 100%;
-    }
-
-    @media (max-width: 1200px) {
-    }
-    @media (max-width: 768px) {
-    }
+    @media (max-width: 1200px) {}
+    @media (max-width: 768px) {}
     @media (max-width: 375px) {
         .art {
             .far-buildings {
                 position: absolute;
                 bottom: 0;
-                transform: translateY(140%) translateX(-5%) translateZ(-1px) scaleX(1.5) scaleY(1.25);
             }
-            .front-buildings {
-                transform: translateY(60%) translateZ(0.15px) scaleX(0.9) scaleY(0.5);
-            }
+            .front-buildings {}
         }
     }
 }
-

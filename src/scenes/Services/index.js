@@ -14,6 +14,9 @@ import green from '../../assets/Services/building-green.svg'
 import blue from '../../assets/Services/building-blue.svg'
 import beige from '../../assets/Services/building-beige.svg'
 
+import Lottie from 'react-lottie'
+import * as animationData from './data.json'
+
 import './style.css'
 
 export class Services extends Component {
@@ -32,6 +35,13 @@ export class Services extends Component {
   }
 
   render() {
+
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData
+    };
+
     return (
       <div id="services" className="dope-bg services-container">
         {/* <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
@@ -52,11 +62,13 @@ export class Services extends Component {
                 We offer a wide range of services and expertise. With Phase One,
                 the look and feel of your product will remain constant across the
                 board, giving a cohesive and complete final product.
+                <br/><br/>
+                Let us know what you need and let's get the <strong>gears turning</strong>!
               </p>
             </div>
           </div>
           <div className="artwork">
-            <img className="content-artwork" src={artwork} alt="Artwork" />
+            <Lottie className="gears" height="600" options={defaultOptions} />
           </div>
         </div>
       </div>

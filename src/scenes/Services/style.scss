@@ -5,9 +5,8 @@
     background-color: $ebb-white;
     .artwork {
         position: relative;
-        max-width: 600px;
-        width: 50%;
-        padding: 60px;
+        max-width: 800px;
+        width: 60%;
         img {
             width: 100%;
             min-width: 100%;
@@ -18,7 +17,7 @@
 @media (max-width: 1200px) {
     .services-container {
         .artwork {
-            padding: 40px;
+            width: 100%;
         }
     }
 }
