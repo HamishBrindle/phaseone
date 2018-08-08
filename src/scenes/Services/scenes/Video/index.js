@@ -10,6 +10,8 @@ import artwork from '../../../../assets/Video/video-artwork.png'
 
 import './style.css'
 
+import Fade from 'react-reveal/Fade';
+
 export class Video extends Component {
   //   static propTypes = {
   //     prop: PropTypes
@@ -40,10 +42,12 @@ export class Video extends Component {
               </p>
             </div>
           </div>
-          <div className="artwork">
-            <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
-            {/* <div className="underlay drop-shadow-far"></div> */}
-          </div>
+          <Fade bottom>
+            <div className="artwork">
+              <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
+              {/* <div className="underlay drop-shadow-far"></div> */}
+            </div>
+          </Fade>
         </div>
       </div>
     )

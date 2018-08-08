@@ -7,6 +7,8 @@ import { connect } from 'react-redux'
 
 import './style.css'
 
+import Fade from 'react-reveal/Fade';
+
 import farPixels from '../../../../assets/Web/pixels-background.svg'
 import closePixels from '../../../../assets/Web/pixels-midground.svg'
 import artwork from '../../../../assets/Web/artwork.png'
@@ -42,10 +44,12 @@ export class Web extends Component {
               </p>
             </div>
           </div>
-          <div className="artwork">
-            {/* <div className="underlay drop-shadow-far"></div> */}
-            <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
-          </div>
+          <Fade bottom>
+            <div className="artwork">
+              {/* <div className="underlay drop-shadow-far"></div> */}
+              <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
+            </div>
+          </Fade>
         </div> 
       </div>
     )

@@ -3,6 +3,8 @@ import Lottie from 'react-lottie'
 import * as animationData from './data.json'
 import logo from '../../assets/Train/tagline-dark.svg'
 
+import Fade from 'react-reveal/Fade';
+
 import './style.css'
 
 export default class Train extends Component {
@@ -25,13 +27,17 @@ export default class Train extends Component {
 
     return (
       <div className="train-container">
-        <div className="logo">
-          <img src={logo} alt="Brand Title White"/>
-        </div>
-        <Lottie options={defaultOptions}
-        height="400"
-              isStopped={this.state.isStopped}
-              isPaused={this.state.isPaused}/>
+        <Fade top>
+          <div className="logo">
+            <img src={logo} alt="Brand Title White"/>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <Lottie options={defaultOptions}
+          height="400"
+                isStopped={this.state.isStopped}
+                isPaused={this.state.isPaused}/>
+        </Fade>
       </div>
     )
   }

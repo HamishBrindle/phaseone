@@ -17,6 +17,8 @@ import beige from '../../assets/Services/building-beige.svg'
 import Lottie from 'react-lottie'
 import * as animationData from './data.json'
 
+import Fade from 'react-reveal/Fade';
+
 import './style.css'
 
 export class Services extends Component {
@@ -67,9 +69,11 @@ export class Services extends Component {
               </p>
             </div>
           </div>
-          <div className="artwork">
-            <Lottie className="gears" height="600" options={defaultOptions} />
-          </div>
+          <Fade left>
+            <div className="artwork">
+              <Lottie className="gears" height="600" options={defaultOptions} />
+            </div>
+          </Fade>
         </div>
       </div>
     )

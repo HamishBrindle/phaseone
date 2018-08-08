@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import { Parallax } from 'react-scroll-parallax'
+import ParallaxImage from '../../components/ParallaxImage'
+
+import Fade from 'react-reveal/Fade';
+
 import frontSlant from '../../assets/Landing/front-slant.svg'
 import farPixels from '../../assets/About/far-pixels.svg'
 import midPixels from '../../assets/About/mid-pixels.svg'
@@ -23,19 +28,27 @@ export class About extends Component {
         return (
             <div id="about" className="dope-bg about-container">
                 <img className="front-slant" src={frontSlant} alt="Front Slant" />
-                <div className="art">
-                    <div className="front-pixels parallax__layer parallax__layer--base">
-                        <img src={grey} alt="Grey Pixels" />
-                        <img src={green} alt="Green Pixels" />
-                        <img src={blue} alt="Blue Pixels" />
-                        <img src={beige} alt="Beige Pixels" />
+
+                <Parallax
+                    offsetYMax={-30}
+                    offsetYMin={10}
+                    slowerScrollRate
+                >
+                    <div className="art">
+                        <div className="front-pixels">
+                            <img src={grey} alt="Grey Pixels" />
+                            <img src={green} alt="Green Pixels" />
+                            <img src={blue} alt="Blue Pixels" />
+                            <img src={beige} alt="Beige Pixels" />
+                        </div>
                     </div>
-                </div>
+                </Parallax>
+
                 <div className="content flex-center">
                     <div className="content-section">
                         <div className="content-section-indicator">
                             <div className="description">
-                                LET'S BEGIN
+                                START
                             </div>
                             <div className="number">
                                 01
@@ -52,9 +65,11 @@ export class About extends Component {
                             </p>
                         </div>
                     </div>
-                    <div className="artwork">
-                        <img className="content-artwork" src={artwork} alt="Artwork" />
-                    </div>
+                    <Fade right>
+                        <div className="artwork">
+                            <img className="content-artwork" src={artwork} alt="Artwork" />
+                        </div>
+                    </Fade>
                 </div>
             </div>
         )

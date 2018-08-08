@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import './style.css'
 
+import Fade from 'react-reveal/Fade';
+
 import { Parallax } from 'react-scroll-parallax';
 import ParallaxImage from '../../components/ParallaxImage'
 
@@ -45,7 +47,9 @@ export class LandingParallax extends Component {
             offsetYMin={-100}
             slowerScrollRate
           >
-          <img src={header} alt="header" />
+          <Fade top>
+            <img src={header} alt="header" />
+          </Fade >
           </Parallax>
         </div>
 
@@ -93,7 +97,7 @@ export class LandingParallax extends Component {
 
           <Parallax
             offsetYMax={-20}
-            offsetYMin={40}
+            offsetYMin={60}
             slowerScrollRate
           >
               <Lottie height="400" options={defaultOptions} />

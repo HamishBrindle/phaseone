@@ -8,6 +8,7 @@ import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 import artwork from '../../../../assets/Photo/photo-artwork.png'
 
+import Fade from 'react-reveal/Fade';
 
 import './style.css'
 
@@ -42,9 +43,11 @@ export class Photo extends Component {
               </p>
             </div>
           </div>
-          <div className="artwork">
-            <img className="content-artwork" src={artwork} alt="Artwork" />
-          </div>
+          <Fade bottom>
+            <div className="artwork">
+              <img className="content-artwork" src={artwork} alt="Artwork" />
+            </div>
+          </Fade>
         </div>
       </div>
     )

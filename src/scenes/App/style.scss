@@ -1,5 +1,7 @@
-// Bootstrap
-// @import 'node_modules/bootstrap/scss/bootstrap';
+/* Variables
+--------------------------------------------------------------------------------------------------------------*/
+$space-between-text-artwork: 36px;
+
 @import '../../scss/_shared.scss';
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
@@ -47,20 +49,24 @@ textarea:focus {
 /* Page Content
 --------------------------------------------------------------------------------------------------------------*/
 
-.wrapper > div:not(:first-child) {
+.wrapper>div:not(:first-child) {
   padding: 64px 16px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
+
 .content {
   // All content of contact page: text and form
   width: 100%;
   display: flex;
   position: relative;
 }
+
 .content-section {
   width: 35%;
   max-width: 600px;
+  margin: 0 $space-between-text-artwork 0 0;
   .content-section-indicator {
     position: relative;
     margin: 0 0 1.25rem 0;
@@ -81,7 +87,7 @@ textarea:focus {
     }
   }
   .content-section-header {
-    font-size: calc(40vw / 14);
+    font-size: 54px;
     margin: 0;
     padding: 0;
     white-space: nowrap;
@@ -190,6 +196,7 @@ textarea:focus {
 .text-right {
   flex-direction: row-reverse;
   .content-section {
+    margin: 0 0 0 $space-between-text-artwork;    
     .content-section-indicator {
       .description {
         text-align: left;
@@ -203,12 +210,21 @@ textarea:focus {
 /* Media Query Stuff
 --------------------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1920px) {
+  .content-section {
+    .content-section-header {
+      font-size: calc(40vw / 14);
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .content {
     flex-direction: column;
   }
   .content-section {
     width: 100%;
+    margin: 0 0 $space-between-text-artwork 0;
     .content-section-indicator {
       display: inline;
       .description {
@@ -232,6 +248,7 @@ textarea:focus {
   .text-right {
     flex-direction: column;
     .content-section {
+      
       .content-section-indicator {
         .description {
           text-align: right;

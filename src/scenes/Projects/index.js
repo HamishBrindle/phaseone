@@ -9,6 +9,8 @@ import artwork1 from '../../assets/Projects/artwork1.png'
 import artwork2 from '../../assets/Projects/artwork2.png'
 import artwork3 from '../../assets/Projects/artwork3.png'
 
+import Fade from 'react-reveal/Fade'
+
 import './style.css'
 
 export class Projects extends Component {
@@ -40,11 +42,13 @@ export class Projects extends Component {
               </p>
             </div>
           </div>
-          <div className="artwork">
-            <img className="artwork-1" src={artwork1} alt="Artwork 1" />
-            <img className="artwork-2" src={artwork2} alt="Artwork 2" />
-            <img className="artwork-3" src={artwork3} alt="Artwork 3" />
-          </div>
+          <Fade bottom>
+            <div className="artwork">
+              <img className="artwork-1" src={artwork1} alt="Artwork 1" />
+              <img className="artwork-2" src={artwork2} alt="Artwork 2" />
+              <img className="artwork-3" src={artwork3} alt="Artwork 3" />
+            </div>
+          </Fade>
         </div>
       </div>
     )

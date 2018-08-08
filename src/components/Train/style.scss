@@ -1,13 +1,15 @@
 @import '../../scss/_shared.scss';
 .train-container {
-    height: 500px;
+    min-height: 125px !important;
+    height: 500px !important;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
     justify-content: end;
-    align-items: end;
+    align-items: center;
     position: relative;
     overflow-y: none;
+    min-width: 414px;
     div {
         max-width: 1920px;
         svg {
@@ -27,19 +29,19 @@
 
 @media (max-width: 1200px) {
     .train-container {
-        height: 300px;
+        height: 300px !important;
     }
 }
 
 @media (max-width: 768px) {
     .train-container {
-        height: 200px;
+        height: 200px !important;
     }
 }
 
 @media (max-width: 414px) {
     .train-container {
-        height: 125px;
+        height: 125px !important;
         div {
             svg {
                 margin-bottom: -10px;

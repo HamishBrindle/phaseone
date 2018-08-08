@@ -2,6 +2,9 @@
 .projects-container {
     background-color: $ebb-white;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .pixels {
         width: 100%;
         object-fit: cover;
@@ -17,7 +20,7 @@
     .artwork {
         position: relative;
         width: 50%;
-        height: 700px;
+        height: 600px;
         max-width: 700px;
         min-width: 300px;
         overflow: hidden;

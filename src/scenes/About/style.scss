@@ -37,14 +37,18 @@
             width: 100%;
         }
     }
-} // Laptop Screen
+}
+
+
+
 @media (max-width: 1200px) {
     .about-container {
         .artwork {
             width: 100%;
         }
     }
-} // iPad
+}
+
 @media (max-width: 768px) {
     .about-container {
         .art {
