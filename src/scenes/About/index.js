@@ -27,8 +27,6 @@ export class About extends Component {
     render() {
         return (
             <div id="about" className="dope-bg about-container">
-                <img className="front-slant" src={frontSlant} alt="Front Slant" />
-
                 <Parallax
                     offsetYMax={-30}
                     offsetYMin={10}
@@ -48,7 +46,7 @@ export class About extends Component {
                     <div className="content-section">
                         <div className="content-section-indicator">
                             <div className="description">
-                                START
+                                WE BEGIN
                             </div>
                             <div className="number">
                                 01

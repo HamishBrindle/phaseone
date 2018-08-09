@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { ServicesNavigation } from '../../../../components/ServicesNavigation'
 
+import { Parallax } from 'react-scroll-parallax';
+
 // eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
@@ -9,8 +11,8 @@ import './style.css'
 
 import Fade from 'react-reveal/Fade';
 
-import farPixels from '../../../../assets/Web/pixels-background.svg'
-import closePixels from '../../../../assets/Web/pixels-midground.svg'
+import farPixels from '../../../../assets/Photo/pixels-background.svg'
+import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 import artwork from '../../../../assets/Web/artwork.png'
 
 export class Web extends Component {
@@ -21,9 +23,25 @@ export class Web extends Component {
   render() {
     return (
       <div id="web" className="web-container">
-        {/* <ServicesNavigation parent="web" /> */}
-        {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
-        <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
+        <ServicesNavigation parent="web" />
+        <Parallax
+            className="floating-pixels horizontal-flip"
+            offsetYMax={30}
+            offsetYMin={-30}
+            slowerScrollRate
+          >
+            <img src={closePixels} alt="Close Pixels"/>
+            {/* <div className="floating-pixels close"></div> */}
+          </Parallax>
+          <Parallax
+            className="floating-pixels horizontal-flip"          
+            offsetYMax={10}
+            offsetYMin={-10}
+            slowerScrollRate
+          >
+            <img src={farPixels} alt="Far Pixels"/>            
+            {/* <div className="floating-pixels far"></div> */}
+          </Parallax>
         <div className="content flex-center">
           <div className="content-section text-left text-light">
             <div className="content-section-indicator">

@@ -4,6 +4,8 @@ import { ServicesNavigation } from '../../../../components/ServicesNavigation'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import { Parallax } from 'react-scroll-parallax';
+
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 import artwork from '../../../../assets/Photo/photo-artwork.png'
@@ -20,9 +22,25 @@ export class Photo extends Component {
   render() {
     return (
       <div id="photo" className="photo-container">
-        {/* <ServicesNavigation parent="photo" /> */}
-        {/* <img className="art-far-pixels" src={farPixels} alt="Far Pixels" />
-        <img className="art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
+        <ServicesNavigation parent="photo" />
+          <Parallax
+            className="floating-pixels"
+            offsetYMax={30}
+            offsetYMin={-30}
+            slowerScrollRate
+          >
+            <img src={closePixels} alt="Close Pixels"/>
+            {/* <div className="floating-pixels close"></div> */}
+          </Parallax>
+          <Parallax
+            className="floating-pixels"          
+            offsetYMax={10}
+            offsetYMin={-10}
+            slowerScrollRate
+          >
+            <img src={farPixels} alt="Far Pixels"/>            
+            {/* <div className="floating-pixels far"></div> */}
+          </Parallax>
         <div className="content flex-center">
           <div className="content-section text-light">
             <div className="content-section-indicator">

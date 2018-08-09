@@ -3,6 +3,9 @@
 .services-container {
     position: relative;
     background-color: $ebb-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .artwork {
         position: relative;
         max-width: 800px;

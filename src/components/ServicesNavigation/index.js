@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import { Link } from 'react-scroll'
+
+
 import './style.css'
 
 export class ServicesNavigation extends Component {
 //   static propTypes = {
-//     prop: PropTypes
+//     prop: PropTypes 
 //   }
     constructor(props) {
         super(props)
@@ -17,13 +20,31 @@ export class ServicesNavigation extends Component {
 
   render() {
 
+    const links = [
+        "photo",
+        "video",
+        "web"
+      ]
+
     return (
       <div className="services-navigation">
         <div className="navigation">
             <ul className="navigation-items">
-                <li className="navigation-item"><a className={this.state.parent === 'photo' ? "strike photo-strike" : ""} href="#photo">PHOTO</a></li>
-                <li className="navigation-item"><a className={this.state.parent === 'video' ? "strike video-strike" : ""} href="#video">VIDEO</a></li>
-                <li className="navigation-item"><a className={this.state.parent === 'web' ? "strike web-strike" : ""} href="#web">WEB</a></li>
+                { links.map((link) => 
+                <Link 
+                    key={link} 
+                    className="navigation-item"
+                    activeClass="active"
+                    onClick={this.props.hideMenu}
+                    to={link}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}
+                >
+                    <span className={this.state.parent === link ? `strike ${link}-strike` : ""}>{link}</span>
+                </Link>
+                )}
             </ul>
         </div>
       </div>

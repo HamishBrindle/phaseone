@@ -12,16 +12,12 @@
             display: flex;
             justify-content: space-between;
             padding: 0;
-            li {
-                list-style: none;
-                a {
-                    color: $ebb-white;
-                    font-weight: 700;
-                    text-decoration: none;
-                }
-                a:hover {
-                    transform: scale(1.15);
-                }
+            span {
+                color: $ebb-white;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                cursor: pointer;
             }
         }
     }
@@ -32,9 +28,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-2px);
-    left: 0;
+    left: -5px;
     right: 0;
-    width: 60px;
+    width: 65px;
     height: 2px;
     background: $ebb-white;
 }

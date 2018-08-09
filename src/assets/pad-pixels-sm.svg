@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768.4 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <g id="pad-pixels-sm" transform="translate(-60 1024) rotate(-90)">
+    <rect id="Rectangle_519" data-name="Rectangle 519" class="cls-1" width="22.4" height="22.4" transform="translate(69.4 554)"/>
+    <rect id="Rectangle_520" data-name="Rectangle 520" class="cls-1" width="22.4" height="22.4" transform="translate(281.6 140.8)"/>
+    <rect id="Rectangle_521" data-name="Rectangle 521" class="cls-1" width="22.4" height="22.4" transform="translate(0 118.4)"/>
+    <rect id="Rectangle_522" data-name="Rectangle 522" class="cls-1" width="22.4" height="22.4" transform="translate(652.8 332)"/>
+    <rect id="Rectangle_523" data-name="Rectangle 523" class="cls-1" width="22.4" height="22.4" transform="translate(756.8 60)"/>
+    <rect id="Rectangle_524" data-name="Rectangle 524" class="cls-1" width="22.4" height="22.4" transform="translate(447.2 806)"/>
+    <rect id="Rectangle_525" data-name="Rectangle 525" class="cls-1" width="22.4" height="22.4" transform="translate(1001.6 565.6)"/>
+  </g>
+</svg>

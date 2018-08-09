@@ -3,9 +3,10 @@ import { ServicesNavigation } from '../../../../components/ServicesNavigation'
 // eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Parallax } from 'react-scroll-parallax';
 
-import farPixels from '../../../../assets/Video/pixels-background.svg'
-import closePixels from '../../../../assets/Video/pixels-midground.svg'
+import farPixels from '../../../../assets/Photo/pixels-background.svg'
+import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 import artwork from '../../../../assets/Video/video-artwork.png'
 
 import './style.css'
@@ -20,6 +21,26 @@ export class Video extends Component {
   render() {
     return (
       <div id="video" className="video-container">
+        <ServicesNavigation parent="video" />
+      
+          <Parallax
+            className="floating-pixels vertical-flip"
+            offsetYMax={30}
+            offsetYMin={-30}
+            slowerScrollRate
+          >
+            <img src={closePixels} alt="Close Pixels"/>
+            {/* <div className="floating-pixels close"></div> */}
+          </Parallax>
+          <Parallax
+            className="floating-pixels vertical-flip"          
+            offsetYMax={10}
+            offsetYMin={-10}
+            slowerScrollRate
+          >
+            <img src={farPixels} alt="Far Pixels"/>            
+            {/* <div className="floating-pixels far"></div> */}
+          </Parallax>
         {/* <ServicesNavigation parent="video" /> */}
         {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
         <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}

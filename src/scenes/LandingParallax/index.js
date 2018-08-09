@@ -12,6 +12,7 @@ import ParallaxImage from '../../components/ParallaxImage'
 import background from '../../assets/LandingParallax/background.svg'
 import midground from '../../assets/LandingParallax/midground.svg'
 import foreground from '../../assets/LandingParallax/foreground.svg'
+import foremost from '../../assets/LandingParallax/foremost.svg'
 
 import header from '../../assets/LandingParallax/landing-title.svg'
 import subheader from '../../assets/LandingParallax/landing-subtitle.svg'
@@ -39,7 +40,7 @@ export class LandingParallax extends Component {
     };
 
     return (
-      <div className="landing-container">
+      <div id="home" className="landing-container">
 
         <div className="header">
         <Parallax
@@ -72,19 +73,13 @@ export class LandingParallax extends Component {
             <ParallaxImage src={midground} alt="midground" />
           </Parallax>
 
-          <Parallax
-            className="art"
-            offsetYMax={0}
-            offsetYMin={0}
-            slowerScrollRate
-          >
+
             <div className="art colored">
               <ParallaxImage src={buildingGrey} alt="buildingGrey" />
               <ParallaxImage src={buildingGreen} alt="buildingGrey" />
               <ParallaxImage src={buildingBlue} alt="buildingGrey" />
               <ParallaxImage src={buildingBeige} alt="buildingGrey" />
             </div>
-          </Parallax>
 
           <Parallax
             className="art grey foreground"
@@ -96,11 +91,22 @@ export class LandingParallax extends Component {
           </Parallax>
 
           <Parallax
+            className="art train"          
             offsetYMax={-20}
             offsetYMin={60}
             slowerScrollRate
           >
-              <Lottie height="400" options={defaultOptions} />
+              <Lottie options={defaultOptions} />
+          </Parallax>
+
+          
+          <Parallax
+            className="art grey foremost"
+            offsetYMax={-10}
+            offsetYMin={50}
+            slowerScrollRate
+          >
+            <ParallaxImage src={foremost} alt="foremost" />
           </Parallax>
         </div>
       </div>

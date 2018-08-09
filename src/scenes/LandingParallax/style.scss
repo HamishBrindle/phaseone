@@ -21,6 +21,8 @@ h6 {
     .header {
         margin-top: 80px;
         padding: 5%;
+        position: absolute;
+        top: 0;
         height: 60vh;
         width: 90vw;
         div {
@@ -45,6 +47,7 @@ h6 {
             bottom: 0;
             left: 0;
             right: 0;
+            pointer-events: none;            
         }
         .grey {
             width: 90%;
@@ -54,14 +57,23 @@ h6 {
         .foreground {
             width: 80%;
         }
+        .foremost {
+            width: 100%;
+        }
         .colored {
             display: flex;
             width: 100%;
             justify-content: space-between;
             align-items: flex-end;
             padding: 0 10% 0 10%;
+            pointer-events: fill;
             img {
                 width: 20%;
+                transition: transform 0.2s ease-in-out;            
+            }
+            img:hover {
+                transform: scale(1.05);
+                transition: transform 0.2s ease-in-out;
             }
         }
     }

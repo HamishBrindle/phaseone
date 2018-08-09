@@ -95,6 +95,7 @@ $navigation-button-size: 33px;
                 color: $ebb-white;
                 text-transform: lowercase;
                 text-decoration: none;
+                cursor: pointer;
             }
             .slider-navigation-link:hover {
                 text-decoration: line-through;

@@ -4,6 +4,9 @@
     position: relative;
     background-color: $ebb-white;
     padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .front-slant {
         position: absolute;
         transform: translateY(-50%);

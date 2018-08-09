@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 539">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8c99a5;
+      }
+
+      .cls-2 {
+        fill: #455c5b;
+      }
+
+      .cls-3 {
+        fill: #455c76;
+      }
+
+      .cls-4 {
+        fill: #a3a097;
+      }
+    </style>
+  </defs>
+  <g id="contact-pixels" transform="translate(1580 647) rotate(180)">
+    <g id="BUILDING-1" transform="translate(-618 -7)">
+      <path id="Union_5" data-name="Union 5" class="cls-1" d="M62-855V-963H170v108ZM170-963v-108H278v108Z" transform="translate(216 1187)"/>
+    </g>
+    <g id="BUILDING-2">
+      <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-2" width="108" height="108" transform="translate(648 108)"/>
+    </g>
+    <g id="BUILDING-3">
+      <path id="Union_6" data-name="Union 6" class="cls-3" d="M0-863V-971H108v108ZM108-971v-108H216v108Z" transform="translate(1080 1187)"/>
+      <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-3" width="108" height="108" transform="translate(1296 324)"/>
+    </g>
+    <g id="BUILDING-4">
+      <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-4" width="108" height="108" transform="translate(1472 539)"/>
+    </g>
+  </g>
+</svg>
