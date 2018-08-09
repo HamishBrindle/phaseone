@@ -71,7 +71,7 @@ export class Services extends Component {
           </div>
           <Fade left>
             <div className="artwork">
-              <Lottie className="gears" height="600" options={defaultOptions} />
+              <Lottie className="gears"  options={defaultOptions} />
             </div>
           </Fade>
         </div>
