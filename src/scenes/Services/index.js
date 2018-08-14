@@ -3,17 +3,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import artwork from '../../assets/Services/services-gears.svg'
-import closePixels from '../../assets/Services/pixels-close.svg'
-import farPixels from '../../assets/Services/pixels-far.svg'
-
-import farBuildings from '../../assets/Services/far-buildings.svg'
-import midBuildings from '../../assets/Services/mid-buildings.svg'
-import frontBuildings from '../../assets/Services/front-buildings.svg'
-import green from '../../assets/Services/building-green.svg'
-import blue from '../../assets/Services/building-blue.svg'
-import beige from '../../assets/Services/building-beige.svg'
-
 import Lottie from 'react-lottie'
 import * as animationData from './data.json'
 
@@ -45,7 +34,7 @@ export class Services extends Component {
     };
 
     return (
-      <div id="services" className="dope-bg services-container">
+      <div id="services" name="services"className="dope-bg services-container">
         {/* <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
         <img className="art-far-pixels" src={farPixels} alt="Close Pixels" /> */}
         <div className="content flex-center text-right">

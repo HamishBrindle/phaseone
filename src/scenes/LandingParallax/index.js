@@ -4,8 +4,11 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import './style.css'
 
+import ReactTooltip from 'react-tooltip'
 import Fade from 'react-reveal/Fade';
-
+import Lottie from 'react-lottie'
+import * as animationData from './data.json'
+import { scroller } from 'react-scroll'
 import { Parallax } from 'react-scroll-parallax';
 import ParallaxImage from '../../components/ParallaxImage'
 
@@ -13,18 +16,13 @@ import background from '../../assets/LandingParallax/background.svg'
 import midground from '../../assets/LandingParallax/midground.svg'
 import foreground from '../../assets/LandingParallax/foreground.svg'
 import foremost from '../../assets/LandingParallax/foremost.svg'
-
 import header from '../../assets/LandingParallax/landing-title.svg'
-import subheader from '../../assets/LandingParallax/landing-subtitle.svg'
-
-// Single Buildings
 import buildingBeige from '../../assets/LandingParallax/building-beige.svg'
 import buildingBlue from '../../assets/LandingParallax/building-blue.svg'
 import buildingGrey from '../../assets/LandingParallax/building-grey.svg'
 import buildingGreen from '../../assets/LandingParallax/building-green.svg'
 
-import Lottie from 'react-lottie'
-import * as animationData from './data.json'
+
 
 export class LandingParallax extends Component {
 
@@ -32,7 +30,31 @@ export class LandingParallax extends Component {
   //     prop: PropTypes
   //   }
 
+  constructor(props) {
+    super(props)
+    this.scrollTo = this.scrollTo.bind(this);
+    this.state = {}
+  }
+
+  scrollTo(event) {
+    const goTo = event.target.attributes.getNamedItem("data-goto").nodeValue
+    scroller.scrollTo(goTo, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+      offset: 55
+    })
+  }
+
   render() {
+
+    const tooltips = [
+      "projects",
+      "photo",
+      "video",
+      "web"
+    ]
+
     const defaultOptions = {
       loop: true,
       autoplay: true,
@@ -40,7 +62,7 @@ export class LandingParallax extends Component {
     };
 
     return (
-      <div id="home" className="dope-bg landing-container">
+      <div id="home" name="home" className="dope-bg landing-container">
 
         <div className="header">
           <Parallax
@@ -75,10 +97,10 @@ export class LandingParallax extends Component {
 
 
           <div className="art colored">
-            <ParallaxImage src={buildingGrey} alt="buildingGrey" />
-            <ParallaxImage src={buildingGreen} alt="buildingGrey" />
-            <ParallaxImage src={buildingBlue} alt="buildingGrey" />
-            <ParallaxImage src={buildingBeige} alt="buildingGrey" />
+            <ParallaxImage src={buildingGrey} alt="buildingGrey" onClick={this.scrollTo} goesTo="projects" />
+            <ParallaxImage src={buildingGreen} alt="buildingGreen" onClick={this.scrollTo} goesTo="photo" />
+            <ParallaxImage src={buildingBlue} alt="buildingBlue" onClick={this.scrollTo} goesTo="web" />
+            <ParallaxImage src={buildingBeige} alt="buildingBeige" onClick={this.scrollTo} goesTo="video" />
           </div>
 
           <Parallax
@@ -109,6 +131,13 @@ export class LandingParallax extends Component {
             <ParallaxImage src={foremost} alt="foremost" />
           </Parallax>
         </div>
+
+        {tooltips.map((name) =>
+          <ReactTooltip id={`tooltip-${name}`} className='tooltip'>
+            <span>{name}</span>
+          </ReactTooltip>
+        )}
+
       </div>
     )
   }

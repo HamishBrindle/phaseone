@@ -6,7 +6,21 @@ export default class Footer extends Component {
 
 
     render() {
+        const usefulLinks = [
+            { path: "/", name: "Home" },
+            { path: "/", name: "Link1" },
+            { path: "/", name: "Link2" },
+            { path: "/", name: "Link3" }
+        ]
+
+        const contactInfo = [
+            { name: "Email", info: "info@phaseonemk2.com" },
+            { name: "Phone", info: "(604) 922-9999" },
+            { name: "Address", info: "2837 Fake Street" }
+        ]
+
         const year = new Date().getFullYear()
+
         return (
             <div className="footer">
                 <div className="section">
@@ -17,18 +31,11 @@ export default class Footer extends Component {
                     <div className="section-item">
                         <h3>Useful Links</h3>
                         <ul>
-                            <li>
-                                <Link to="/">Link1</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Link2</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Link3</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Link4</Link>
-                            </li>
+                            {usefulLinks.map((link) => 
+                                <li key={link.name}>
+                                    <Link to={link.path}>{link.name}</Link>
+                                </li>
+                            )}
                         </ul>
                     </div>
                     <div className="section-item">
@@ -38,25 +45,18 @@ export default class Footer extends Component {
                     <div className="section-item">
                         <h3>Contact</h3>
                         <ul>
-                            <li>
-                                <Link to="/">Email</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Address</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Phone</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Fax</Link>
-                            </li>
+                            {contactInfo.map((item) => 
+                                <li key={item.name} className="contact-item">
+                                    <p><strong>{item.name}</strong> <em>{item.info}</em></p>
+                                </li>
+                            )}
                         </ul>
                     </div>
                 </div>
                 <hr/>
                 <div className="section">
                     <div className="newsletter underline-dark">
-                        <label forHtml="newsletterInput">NEWSLETTER</label>
+                        <label forhtml="newsletterInput">NEWSLETTER</label>
                         <input type="email" className="form-control" id="newsletterInput" placeholder="Email" />
                         <button className="button-light">sign-up</button>
                     </div>

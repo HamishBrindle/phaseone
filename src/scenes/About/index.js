@@ -1,19 +1,10 @@
 import React, { Component } from 'react'
+// eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import { Parallax } from 'react-scroll-parallax'
-import ParallaxImage from '../../components/ParallaxImage'
-
 import Fade from 'react-reveal/Fade';
 
-import frontSlant from '../../assets/Landing/front-slant.svg'
-import farPixels from '../../assets/About/far-pixels.svg'
-import midPixels from '../../assets/About/mid-pixels.svg'
-import grey from '../../assets/About/grey.svg'
-import green from '../../assets/About/green.svg'
-import blue from '../../assets/About/blue.svg'
-import beige from '../../assets/About/beige.svg'
 import artwork from '../../assets/About/ARTWORK.png'
 
 import './style.css'
@@ -27,7 +18,7 @@ export class About extends Component {
     render() {
 
         return (
-            <div id="about" className="dope-bg about-container">
+            <div id="about" name="about" className="dope-bg about-container">
 
                 <div className="content flex-center">
                     <div className="content-section">

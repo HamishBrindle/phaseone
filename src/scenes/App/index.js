@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './style.css';
-import { Switch, Route } from 'react-router-dom'
+
+// import { Switch, Route } from 'react-router-dom'
+// import NotFound from '../../components/NotFound'
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -14,7 +16,6 @@ import Services from '../Services'
 import Photo from '../Services/scenes/Photo'
 import Video from '../Services/scenes/Video'
 import Web from '../Services/scenes/Web'
-import NotFound from '../../components/NotFound'
 import Footer from '../../components/Footer'
 
 class App extends Component {

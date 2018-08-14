@@ -12,7 +12,7 @@ export class Contact extends Component {
 
   render() {
     return (
-      <div id="contact" className='dope-bg contact-container flex-center'>
+      <div id="contact" name="contact" className='dope-bg contact-container flex-center'>
 
         <div className="content flex-center">
           <div className="content-section text-left">

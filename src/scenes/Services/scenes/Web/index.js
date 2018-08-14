@@ -22,7 +22,7 @@ export class Web extends Component {
 
   render() {
     return (
-      <div id="web" className="web-container">
+      <div id="web" name="web" className="web-container">
         <ServicesNavigation parent="web" />
         <Parallax
             className="floating-pixels horizontal-flip"

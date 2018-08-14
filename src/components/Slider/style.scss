@@ -15,6 +15,7 @@ $arrow-size: 50px;
 }
 
 .arrow {
+    opacity: 0.3;
     width: $arrow-size !important;
     height: $arrow-size !important;
     // margin: 0 -$arrow-size 0 0;

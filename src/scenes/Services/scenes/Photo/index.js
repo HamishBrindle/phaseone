@@ -29,7 +29,7 @@ export class Photo extends Component {
     ]
     
     return (
-      <div id="photo" className="photo-container">
+      <div id="photo" name="photo" className="photo-container">
         <ServicesNavigation parent="photo" />
           <Parallax
             className="floating-pixels"

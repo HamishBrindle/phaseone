@@ -9,7 +9,6 @@ import ReactPlayer from 'react-player'
 
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
-import artwork from '../../../../assets/Video/video-artwork.png'
 
 import './style.css'
 
@@ -22,7 +21,7 @@ export class Video extends Component {
 
   render() {
     return (
-      <div id="video" className="video-container">
+      <div id="video" name="video" className="video-container">
         <ServicesNavigation parent="video" />
       
           <Parallax

@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import farPixels from '../../assets/Projects/pixels-far.svg'
-import closePixels from '../../assets/Projects/pixels-mid.svg'
 import artwork1 from '../../assets/Projects/artwork1.png'
 import artwork2 from '../../assets/Projects/artwork2.png'
 import artwork3 from '../../assets/Projects/artwork3.png'
@@ -26,7 +24,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" className='dope-bg projects-container'>
+      <div id="projects" name="projects" className='dope-bg projects-container'>
         {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
         <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
         <div className="content flex-center text-right">

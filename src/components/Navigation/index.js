@@ -2,37 +2,19 @@ import React, { Component } from 'react'
 import './style.css'
 import { connect } from 'react-redux'
 
-import { NavLink } from 'react-router-dom'
-
 // import { NavLink } from 'react-router-dom'
 import logo from '../../assets/Navigation/nav-brand.svg'
 import menu from '../../assets/Navigation/nav-menu.svg'
 import exit from '../../assets/Navigation/nav-exit.svg'
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll, scrollSpy } from 'react-scroll'
 
 import { showMenu, hideMenu } from '../../redux/actions'
 
 class Navigation extends Component {
 
   componentDidMount() {
-
-    Events.scrollEvent.register('begin', function (to, element) {
-      console.log("begin", arguments);
-    });
-
-    Events.scrollEvent.register('end', function (to, element) {
-      console.log("end", arguments);
-    });
-
     scrollSpy.update();
-
-  }
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
   }
 
   scrollToTop() {

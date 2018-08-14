@@ -57,30 +57,6 @@
     }
 }
 
-.underline-dark {
-    margin: 0 0 2rem;
-    .form-control {
-        background: none;
-        color: $ebb-white;
-        caret-color: $ebb-white;
-        border: 4px $ebb-white solid;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        line-height: 1.5em;
-    }
-    label {
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    input {
-        width: 100%;
-    }
-    textarea {
-        width: 100%;
-    }
-}
-
 @media (max-width: 1200px) {
     .contact-form {
         width: 100%;

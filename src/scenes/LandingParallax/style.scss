@@ -18,6 +18,9 @@ h6 {
     flex-direction: column;
     justify-content: end;
     align-items: start;
+    -webkit-box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
     .header {
         margin-top: 80px;
         padding: 5%;
@@ -44,7 +47,7 @@ h6 {
         }
         .art {
             position: absolute;
-            bottom: 0;
+            bottom: -10px;
             left: 0;
             right: 0;
             pointer-events: none;
