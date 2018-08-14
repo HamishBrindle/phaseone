@@ -13,7 +13,7 @@ h6 {
 .landing-container {
     position: relative;
     height: 100vh;
-    width: 100vw; 
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -47,7 +47,7 @@ h6 {
             bottom: 0;
             left: 0;
             right: 0;
-            pointer-events: none;            
+            pointer-events: none;
         }
         .grey {
             width: 90%;
@@ -69,7 +69,7 @@ h6 {
             pointer-events: fill;
             img {
                 width: 20%;
-                transition: transform 0.2s ease-in-out;            
+                transition: transform 0.2s ease-in-out;
             }
             img:hover {
                 transform: scale(1.05);
@@ -80,12 +80,14 @@ h6 {
     @media (max-width: 1200px) {}
     @media (max-width: 768px) {}
     @media (max-width: 375px) {
-        .art {
-            .far-buildings {
-                position: absolute;
-                bottom: 0;
+        .artwork {
+            .art {
+                bottom: -10px;
+                .far-buildings {
+                    position: absolute;
+                    bottom: 0;
+                }
             }
-            .front-buildings {}
         }
     }
 }

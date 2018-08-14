@@ -67,7 +67,7 @@ class Navigation extends Component {
 
     return (
       <div className="navigation">
-        <nav className='navigation-bar going-dark'>
+        <nav className='navigation-bar'>
           <a href='/'><img src={logo} alt="Logo" className='nav-brand' /></a>
           <div
             className='nav-menu'
@@ -110,7 +110,6 @@ class Navigation extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
     open: state.navigation[0].open
   }

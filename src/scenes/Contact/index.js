@@ -45,15 +45,15 @@ export class Contact extends Component {
 
           <div className="contact-form">
             <div className="form-group underline">
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input type="text" className="form-control" name="name" id="" placeholder="" />
             </div>
             <div className="form-group underline">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="email" className="form-control" name="email" id="" placeholder="" />
             </div>
             <div className="form-group underline">
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea className="form-control" name="message" id="" placeholder="" />
             </div>
             <button className="button-dark contact-form-submit">send</button>

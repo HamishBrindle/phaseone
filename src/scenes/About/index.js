@@ -25,22 +25,9 @@ export class About extends Component {
     //   }
 
     render() {
+
         return (
             <div id="about" className="dope-bg about-container">
-                <Parallax
-                    offsetYMax={-30}
-                    offsetYMin={10}
-                    slowerScrollRate
-                >
-                    <div className="art">
-                        <div className="front-pixels">
-                            <img src={grey} alt="Grey Pixels" />
-                            <img src={green} alt="Green Pixels" />
-                            <img src={blue} alt="Blue Pixels" />
-                            <img src={beige} alt="Beige Pixels" />
-                        </div>
-                    </div>
-                </Parallax>
 
                 <div className="content flex-center">
                     <div className="content-section">

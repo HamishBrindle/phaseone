@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Parallax } from 'react-scroll-parallax';
 
+import ReactPlayer from 'react-player'
+
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 import artwork from '../../../../assets/Video/video-artwork.png'
@@ -65,8 +67,7 @@ export class Video extends Component {
           </div>
           <Fade bottom>
             <div className="artwork">
-              <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
-              {/* <div className="underlay drop-shadow-far"></div> */}
+              <ReactPlayer url='https://vimeo.com/252632691' volume={0.5} muted width='100%' height='100%' />
             </div>
           </Fade>
         </div>

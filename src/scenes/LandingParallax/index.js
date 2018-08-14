@@ -40,17 +40,17 @@ export class LandingParallax extends Component {
     };
 
     return (
-      <div id="home" className="landing-container">
+      <div id="home" className="dope-bg landing-container">
 
         <div className="header">
-        <Parallax
+          <Parallax
             offsetYMax={100}
             offsetYMin={-100}
             slowerScrollRate
           >
-          <Fade top>
-            <img src={header} alt="header" />
-          </Fade >
+            <Fade top>
+              <ParallaxImage src={header} alt="header" />
+            </Fade >
           </Parallax>
         </div>
 
@@ -58,7 +58,7 @@ export class LandingParallax extends Component {
           <Parallax
             className="art"
             offsetYMax={80}
-            offsetYMin={-20}
+            offsetYMin={-10}
             slowerScrollRate
           >
             <ParallaxImage src={background} alt="background" />
@@ -74,12 +74,12 @@ export class LandingParallax extends Component {
           </Parallax>
 
 
-            <div className="art colored">
-              <ParallaxImage src={buildingGrey} alt="buildingGrey" />
-              <ParallaxImage src={buildingGreen} alt="buildingGrey" />
-              <ParallaxImage src={buildingBlue} alt="buildingGrey" />
-              <ParallaxImage src={buildingBeige} alt="buildingGrey" />
-            </div>
+          <div className="art colored">
+            <ParallaxImage src={buildingGrey} alt="buildingGrey" />
+            <ParallaxImage src={buildingGreen} alt="buildingGrey" />
+            <ParallaxImage src={buildingBlue} alt="buildingGrey" />
+            <ParallaxImage src={buildingBeige} alt="buildingGrey" />
+          </div>
 
           <Parallax
             className="art grey foreground"
@@ -91,19 +91,19 @@ export class LandingParallax extends Component {
           </Parallax>
 
           <Parallax
-            className="art train"          
+            className="art train"
             offsetYMax={-20}
-            offsetYMin={60}
+            offsetYMin={70}
             slowerScrollRate
           >
-              <Lottie options={defaultOptions} />
+            <Lottie options={defaultOptions} />
           </Parallax>
 
-          
+
           <Parallax
             className="art grey foremost"
             offsetYMax={-10}
-            offsetYMin={50}
+            offsetYMin={80}
             slowerScrollRate
           >
             <ParallaxImage src={foremost} alt="foremost" />

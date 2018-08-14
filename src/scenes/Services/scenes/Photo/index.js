@@ -8,18 +8,26 @@ import { Parallax } from 'react-scroll-parallax';
 
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
-import artwork from '../../../../assets/Photo/photo-artwork.png'
+
+import artwork1 from '../../../../assets/Photo/photo-artwork.png'
+import artwork2 from '../../../../assets/Video/video-artwork.png'
+import artwork3 from '../../../../assets/Web/artwork.png'
 
 import Fade from 'react-reveal/Fade';
+
+import CustomSlider from '../../../../components/Slider'
 
 import './style.css'
 
 export class Photo extends Component {
-  //   static propTypes = {
-  //     prop: PropTypes
-  //   }
 
   render() {
+    const sliderImages = [
+      artwork1,
+      artwork2,
+      artwork3
+    ]
+    
     return (
       <div id="photo" className="photo-container">
         <ServicesNavigation parent="photo" />
@@ -63,7 +71,8 @@ export class Photo extends Component {
           </div>
           <Fade bottom>
             <div className="artwork">
-              <img className="content-artwork" src={artwork} alt="Artwork" />
+              {/* <img className="content-artwork" src={artwork} alt="Artwork" /> */}
+              <CustomSlider images={sliderImages}/>
             </div>
           </Fade>
         </div>

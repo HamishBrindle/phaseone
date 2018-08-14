@@ -14,9 +14,15 @@ import Fade from 'react-reveal/Fade'
 import './style.css'
 
 export class Projects extends Component {
-  //   static propTypes = {
-  //     prop: PropTypes
-  //   }
+
+  constructor(props) {
+    super(props)
+    this.goToProjects = this.goToProjects.bind(this)
+  }
+
+  goToProjects() {
+
+  }
 
   render() {
     return (
@@ -40,6 +46,7 @@ export class Projects extends Component {
                 Now that you're here, maybe we can talk about something new.
                 We're always excited to talk about new ideas!
               </p>
+              <button className="button-dark" onClick={this.goToProjects}>view projects</button>
             </div>
           </div>
           <Fade bottom>

@@ -9,16 +9,8 @@
     .artwork {
         position: relative;
         background: none;
-        max-width: 800px;
+        max-width: 600px;
         width: 60%;
-        div {
-            overflow: auto !important;
-        }
-        svg {
-            -webkit-box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
-            box-shadow: 12px 17px 57px -27px rgba(0, 0, 0, 0.75);
-        }
     }
     
 } // Laptop Screen

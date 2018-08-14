@@ -15,6 +15,7 @@ import Photo from '../Services/scenes/Photo'
 import Video from '../Services/scenes/Video'
 import Web from '../Services/scenes/Web'
 import NotFound from '../../components/NotFound'
+import Footer from '../../components/Footer'
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
             <Projects />
             <Train />
             <Contact />
+            <Footer />
           </div>
           <Navigation />
         </div>
