@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import { Link } from 'react-router-dom'
+
 import artwork1 from '../../assets/Projects/artwork1.png'
 import artwork2 from '../../assets/Projects/artwork2.png'
 import artwork3 from '../../assets/Projects/artwork3.png'
@@ -44,7 +46,7 @@ export class Projects extends Component {
                 Now that you're here, maybe we can talk about something new.
                 We're always excited to talk about new ideas!
               </p>
-              <button className="button-dark" onClick={this.goToProjects}>view projects</button>
+              <Link to="/projects"><button className="button-dark" onClick={this.goToProjects}>view projects</button></Link>
             </div>
           </div>
           <Fade bottom>

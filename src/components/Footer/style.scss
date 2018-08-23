@@ -79,6 +79,20 @@
         font-size: 18px;
     }
 
+    .social {
+        img {
+            max-width: 40px;
+            box-sizing: content-box;
+            padding: 0 10px 0 10px;
+            transition: transform 0.1s ease-in-out;            
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+
     h3 {
         color: $ebb-white;
     }

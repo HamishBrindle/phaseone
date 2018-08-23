@@ -18,9 +18,16 @@ h6 {
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    -webkit-box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px -16px 37px -21px rgba(0, 0, 0, 0.75);
+    .box-shadow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        -moz-box-shadow: inset 0 -40px 40px -40px rgba($color: #000000, $alpha: 0.4);
+        -webkit-box-shadow: inset 0 -40px 40px -40px rgba($color: #000000, $alpha: 0.4);
+        box-shadow: inset 0 -40px 40px -40px rgba($color: #000000, $alpha: 0.4);
+    }
     .header {
         margin-top: 80px;
         padding: 5%;

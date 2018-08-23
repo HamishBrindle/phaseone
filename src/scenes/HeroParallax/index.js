@@ -24,7 +24,7 @@ import buildingGreen from '../../assets/LandingParallax/building-green.svg'
 
 
 
-export class LandingParallax extends Component {
+export class HeroParallax extends Component {
 
   //   static propTypes = {
   //     prop: PropTypes
@@ -130,6 +130,7 @@ export class LandingParallax extends Component {
           >
             <ParallaxImage src={foremost} alt="foremost" />
           </Parallax>
+
         </div>
 
         {tooltips.map((name) =>
@@ -137,7 +138,7 @@ export class LandingParallax extends Component {
             <span>{name}</span>
           </ReactTooltip>
         )}
-
+        <div className="box-shadow"></div>
       </div>
     )
   }
@@ -151,4 +152,4 @@ const mapDispatchToProps = {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LandingParallax)
+export default connect(mapStateToProps, mapDispatchToProps)(HeroParallax)

@@ -1,0 +1,18 @@
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .gallery-content {
+        width: 100%;
+        max-width: 960px;
+    }
+    @media (max-width: 1200px) {
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 414px) {
+    }
+    @media (max-width: 375px) {
+    }
+}

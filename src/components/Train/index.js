@@ -27,11 +27,6 @@ export default class Train extends Component {
 
     return (
       <div className="train-container">
-        <Fade top>
-          <div className="logo">
-            <img src={logo} alt="Brand Title White"/>
-          </div>
-        </Fade>
         <Fade bottom>
           <Lottie options={defaultOptions}
           height="400"

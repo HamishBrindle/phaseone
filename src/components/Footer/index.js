@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './style.css'
 
-export default class Footer extends Component {
+import Facebook from '../../assets/Facebook.png'
+import Instagram from '../../assets/Instagram.png'
+import Twitter from '../../assets/Twitter.png'
+import YouTube from '../../assets/YouTube.png'
 
+import SocialIcon from '../../components/SocialIcon'
+
+export default class Footer extends Component {
 
     render() {
         const usefulLinks = [
@@ -17,6 +23,13 @@ export default class Footer extends Component {
             { name: "Email", info: "info@phaseonemk2.com" },
             { name: "Phone", info: "(604) 922-9999" },
             { name: "Address", info: "2837 Fake Street" }
+        ]
+
+        const socialIcons = [
+            { name: "Facebook", link: "http://facebook.com/", image: Facebook },
+            { name: "Instagram", link: "http://instagram.com/", image: Instagram },
+            { name: "Twitter", link: "http://twitter.com/", image: Twitter },
+            { name: "YouTube", link: "http://youTube.com/", image: YouTube },
         ]
 
         const year = new Date().getFullYear()
@@ -64,10 +77,9 @@ export default class Footer extends Component {
                 <hr/>
                 <div className="section">
                     <div className="social">
-                        {/* <SocialIcon></SocialIcon>
-                        <SocialIcon></SocialIcon>
-                        <SocialIcon></SocialIcon>
-                        <SocialIcon></SocialIcon> */}
+                        {socialIcons.map((icon) => 
+                            <SocialIcon image={icon.image} name={icon.name} link={icon.link} />
+                        )}
                     </div>
                 </div>
                 <hr/>

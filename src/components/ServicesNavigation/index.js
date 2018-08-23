@@ -42,7 +42,7 @@ export class ServicesNavigation extends Component {
                     offset={0}
                     duration={1000}
                 >
-                    <span className={this.state.parent === link ? `strike ${link}-strike` : ""}>{link}</span>
+                    <span className={this.state.parent === link ? `strike ${link}-strike` : ""}>{link.toUpperCase()}</span>
                 </Link>
                 )}
             </ul>
