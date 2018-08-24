@@ -5,7 +5,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import MasonryItem from '../../components/MasonryItem'
 
 import ReactPlayer from 'react-player'
-
+import Footer from '../../components/Footer'
 import Lightbox from 'lightbox-react';
 
 import './style.css'
@@ -31,17 +31,18 @@ export class AllProjects extends Component {
         const { itemIndex, isOpen } = this.state
         return (
             <div className="dope-bg wrapper">
-                <div></div>
                 <div className="gallery-container">
+                    <div className="gallery-jumbotron">
+                        <div>
+                            <h1>Projects</h1>
+                            <p>Have a look at our previous work, and feel free to contact us with any ideas - we love new ideas.</p>
+                            <br/>
+                            <Link to="/">
+                                <button style={{ marginBottom: '24px' }} className="button-light">go back</button>
+                            </Link>
+                        </div>
+                    </div>
                     <div className="gallery-content">
-
-                        <h1>Projects</h1>
-                        <p>Have a look at our previous work, and feel free to contact us with any ideas - we love new ideas.</p>
-                        <br/>
-                        <Link to="/">
-                            <button style={{ marginBottom: '24px' }} className="button-dark">go back</button>
-                        </Link>
-
                         <ResponsiveMasonry
                             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                         >
@@ -74,6 +75,7 @@ export class AllProjects extends Component {
                     )}
 
                 </div>
+                <Footer />
             </div>
         )
     }

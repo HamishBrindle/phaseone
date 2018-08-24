@@ -20,7 +20,6 @@ class App extends Component {
             <Route path='/projects' component={AllProjects} />
             <Route path="*" component={NotFound} />
           </Switch>
-          <Navigation />
         </div>
       </ParallaxProvider>
     );

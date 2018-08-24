@@ -9,6 +9,8 @@ $navigation-button-size: 33px;
     box-shadow: 0px -3px 27px 0px rgba(0,0,0,0.75);
 }
 .navigation {
+    min-height: 0px !important;
+    padding: 0 !important;
     z-index: 999;
     .navigation-bar {
         position: fixed;
@@ -53,13 +55,13 @@ $navigation-button-size: 33px;
         height: 100%;
         background: $ebony-clay;
         opacity: 0.0;
-        z-index: -1;
-        transition: all 0.5s ease-in-out;
+        z-index: -99;
+        transition: opacity 0.3s ease-in-out;
     }
     .underlay-active {
         z-index: 0;
         opacity: 0.5;
-        transition: all 0.5s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
     .slider {
         position: fixed;

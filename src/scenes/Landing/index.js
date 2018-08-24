@@ -10,6 +10,7 @@ import Photo from '../Services/scenes/Photo'
 import Video from '../Services/scenes/Video'
 import Web from '../Services/scenes/Web'
 import Footer from '../../components/Footer'
+import Navigation from '../../components/Navigation'
 
 export default class Landing extends Component {
   render() {
@@ -24,7 +25,8 @@ export default class Landing extends Component {
         <Projects />
         <Train />
         <Contact />
-        <Footer />        
+        <Footer />
+        <Navigation />
       </div>
     )
   }

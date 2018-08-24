@@ -1,15 +1,29 @@
+@import '../../scss/_shared.scss';
+
 .gallery-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .gallery-content {
+    .gallery-jumbotron {
         width: 100%;
-        max-width: 960px;
+        background: $ebony-clay;
+        padding: 36px 16px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        div {
+            max-width: 960px;
+            width: 100%;
+        }
         h1 {
+            color: $ebb-white;
             margin-bottom: 0;
         }
         p {
+            color: $ebb-white;            
             display: inline-block;
             max-width: 500px;
         }
@@ -23,6 +37,11 @@
         a:hover {
             text-decoration: none;
         }
+    }
+    .gallery-content {
+        width: 100%;
+        max-width: 960px;
+        
     }
     @media (max-width: 1200px) {
     }

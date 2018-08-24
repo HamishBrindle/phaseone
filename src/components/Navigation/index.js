@@ -13,6 +13,7 @@ import { showMenu, hideMenu } from '../../redux/actions'
 
 class Navigation extends Component {
 
+  
   componentDidMount() {
     scrollSpy.update();
   }

@@ -201,11 +201,27 @@ textarea:focus {
   color: $ebb-white;
   min-height: 50px;
   transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 .button-dark:hover {
   color: $ebony-clay;
+  background: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-light {
+  border: 4px solid $ebb-white;
+  margin: 24px 0 0 0;
+  background: $ebb-white;
+  color: $ebony-clay;
+  min-height: 50px;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
+}
+
+.button-light:hover {
+  color: $ebb-white;
   background: transparent;
   transition: all 0.25s ease-in-out;
 }
