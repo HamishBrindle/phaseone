@@ -6,30 +6,33 @@ import Facebook from '../../assets/Facebook.png'
 import Instagram from '../../assets/Instagram.png'
 import Twitter from '../../assets/Twitter.png'
 import YouTube from '../../assets/YouTube.png'
-
 import SocialIcon from '../../components/SocialIcon'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faMapPin } from '@fortawesome/free-solid-svg-icons'
 
 export default class Footer extends Component {
 
     render() {
+
         const usefulLinks = [
             { path: "/", name: "Home" },
-            { path: "/", name: "Link1" },
-            { path: "/", name: "Link2" },
-            { path: "/", name: "Link3" }
+            { path: "/projects", name: "Projects" },
+            { path: "http://truenorth.studio/", name: "True North" }
         ]
 
         const contactInfo = [
-            { name: "Email", info: "info@phaseonemk2.com" },
-            { name: "Phone", info: "(604) 922-9999" },
-            { name: "Address", info: "2837 Fake Street" }
+            { icon: faEnvelope, name: "Email", info: "info@phaseonemk2.com" },
+            { icon: faPhone, name: "Phone", info: "(604) 922-9999" },
+            { icon: faMapPin, name: "Address", info: "2837 Fake Street" }
         ]
 
         const socialIcons = [
-            { name: "Facebook", link: "http://facebook.com/", image: Facebook },
-            { name: "Instagram", link: "http://instagram.com/", image: Instagram },
-            { name: "Twitter", link: "http://twitter.com/", image: Twitter },
-            { name: "YouTube", link: "http://youTube.com/", image: YouTube },
+            { name: "Facebook", link: "#", image: Facebook },
+            { name: "Instagram", link: "#", image: Instagram },
+            { name: "Twitter", link: "#", image: Twitter },
+            { name: "YouTube", link: "#", image: YouTube },
         ]
 
         const year = new Date().getFullYear()
@@ -38,8 +41,8 @@ export default class Footer extends Component {
             <div className="footer">
                 <div className="section">
                     <div className="section-item">
-                        <h3>Footer Content</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ab excepturi eos facere corrupti quae id veniam aliquam repellendus animi aspernatur nulla aperiam quas, adipisci velit libero! Veniam, dolore autem.</p>
+                        <h3>Phase One</h3>
+                        <p>A Vancouver based marketing firm specializing in property development and branding. If you have a new development in the works, we can help.</p>
                     </div>
                     <div className="section-item">
                         <h3>Useful Links</h3>
@@ -51,16 +54,13 @@ export default class Footer extends Component {
                             )}
                         </ul>
                     </div>
-                    <div className="section-item">
-                        <h3>Legal</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique libero dolores cupiditate. Ex reiciendis exercitationem corporis esse fugit quasi officiis dolor quo sed minus aut quis impedit, maiores assumenda.</p>
-                    </div>
+
                     <div className="section-item">
                         <h3>Contact</h3>
                         <ul>
                             {contactInfo.map((item) => 
                                 <li key={item.name} className="contact-item">
-                                    <p><strong>{item.name}</strong> <em>{item.info}</em></p>
+                                    <p><strong><FontAwesomeIcon icon={item.icon} /></strong> {item.info}</p>
                                 </li>
                             )}
                         </ul>

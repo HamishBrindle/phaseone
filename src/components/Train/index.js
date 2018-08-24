@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
 import * as animationData from './data.json'
-import logo from '../../assets/Train/tagline-dark.svg'
 
 import Fade from 'react-reveal/Fade';
 

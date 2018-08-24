@@ -94,7 +94,8 @@ $navigation-button-size: 33px;
             .slider-navigation-link {
                 font-size: calc(42px + 10 * ((100vw - 320px) / 680));
                 color: $ebb-white;
-                text-transform: lowercase;
+                text-transform: uppercase;
+                margin: 0 0 10px 0;
                 text-decoration: none;
                 cursor: pointer;
             }

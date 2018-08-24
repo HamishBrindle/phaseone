@@ -12,15 +12,15 @@ import { scroller } from 'react-scroll'
 import { Parallax } from 'react-scroll-parallax';
 import ParallaxImage from '../../components/ParallaxImage'
 
-import background from '../../assets/LandingParallax/background.svg'
-import midground from '../../assets/LandingParallax/midground.svg'
-import foreground from '../../assets/LandingParallax/foreground.svg'
-import foremost from '../../assets/LandingParallax/foremost.svg'
-import header from '../../assets/LandingParallax/landing-title.svg'
-import buildingBeige from '../../assets/LandingParallax/building-beige.svg'
-import buildingBlue from '../../assets/LandingParallax/building-blue.svg'
-import buildingGrey from '../../assets/LandingParallax/building-grey.svg'
-import buildingGreen from '../../assets/LandingParallax/building-green.svg'
+import background from '../../assets/HeroParallax/background.svg'
+import midground from '../../assets/HeroParallax/midground.svg'
+import foreground from '../../assets/HeroParallax/foreground.svg'
+import foremost from '../../assets/HeroParallax/foremost.svg'
+import header from '../../assets/HeroParallax/landing-title.svg'
+import buildingBeige from '../../assets/HeroParallax/building-beige.svg'
+import buildingBlue from '../../assets/HeroParallax/building-blue.svg'
+import buildingGrey from '../../assets/HeroParallax/building-grey.svg'
+import buildingGreen from '../../assets/HeroParallax/building-green.svg'
 
 
 

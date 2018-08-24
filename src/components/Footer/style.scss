@@ -80,6 +80,8 @@
     }
 
     .social {
+        display: flex;
+        justify-content: center;
         img {
             max-width: 40px;
             box-sizing: content-box;
@@ -106,6 +108,12 @@
             a {
                 color: $ebb-white;
                 text-decoration: none;
+                transition: opacity 0.2s ease-in-out
+            }
+
+            a:hover {
+                opacity: 0.8;
+                transition: opacity 0.2s ease-in-out
             }
         }
     }
