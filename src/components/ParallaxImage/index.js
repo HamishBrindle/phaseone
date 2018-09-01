@@ -30,6 +30,8 @@ export default class ParallaxImage extends Component {
                 data-for={`tooltip-${this.props.goesTo}`}
                 onClick={this.props.onClick}
                 style={styles}
+                className={this.props.className}
+                id={this.props.id}
             />
         )
     }

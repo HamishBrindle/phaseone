@@ -67,14 +67,14 @@ export default class Footer extends Component {
                     </div>
                 </div>
                 <hr/>
-                <div className="section">
+                {/* <div className="section">
                     <div className="newsletter underline-dark">
                         <label forhtml="newsletterInput">NEWSLETTER</label>
                         <input type="email" className="form-control" id="newsletterInput" placeholder="Email" />
                         <button className="button-light">sign-up</button>
                     </div>
                 </div>
-                <hr/>
+                <hr/> */}
                 <div className="section">
                     <div className="social">
                         {socialIcons.map((icon) => 

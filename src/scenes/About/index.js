@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import Fade from 'react-reveal/Fade';
 
 import artwork from '../../assets/About/ARTWORK.png'
+import pixels from '../../assets/Projects/project-pixels.svg'
 
 import './style.css'
 
@@ -19,6 +20,7 @@ export class About extends Component {
 
         return (
             <div id="about" name="about" className="dope-bg about-container">
+                <img className="artwork-pixels" src={pixels} alt="Pixel Art" />
 
                 <div className="content flex-center">
                     <div className="content-section">

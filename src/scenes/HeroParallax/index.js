@@ -16,13 +16,15 @@ import background from '../../assets/HeroParallax/background.svg'
 import midground from '../../assets/HeroParallax/midground.svg'
 import foreground from '../../assets/HeroParallax/foreground.svg'
 import foremost from '../../assets/HeroParallax/foremost.svg'
-import header from '../../assets/HeroParallax/landing-title.svg'
 import buildingBeige from '../../assets/HeroParallax/building-beige.svg'
 import buildingBlue from '../../assets/HeroParallax/building-blue.svg'
 import buildingGrey from '../../assets/HeroParallax/building-grey.svg'
 import buildingGreen from '../../assets/HeroParallax/building-green.svg'
+import scrollIcon from '../../assets/HeroParallax/scroll-icon.svg'
 
-
+import headerMedium from '../../assets/HeroParallax/header-md.svg'
+import header from '../../assets/HeroParallax/landing-title.svg'
+import subheader from '../../assets/HeroParallax/landing-subtitle.svg'
 
 export class HeroParallax extends Component {
 
@@ -71,7 +73,9 @@ export class HeroParallax extends Component {
             slowerScrollRate
           >
             <Fade top>
-              <ParallaxImage src={header} alt="header" />
+              <ParallaxImage id="header-lg" src={header} alt="header" />
+              <ParallaxImage id="header-md" src={headerMedium} alt="header" />
+              <ParallaxImage id="subheader-lg" src={subheader} alt="subheader" className="subheader" />
             </Fade >
           </Parallax>
         </div>
@@ -113,6 +117,7 @@ export class HeroParallax extends Component {
           </Parallax>
 
           <Parallax
+            id="train"
             className="art train"
             offsetYMax={-20}
             offsetYMin={70}
@@ -132,10 +137,12 @@ export class HeroParallax extends Component {
           </Parallax>
 
         </div>
+        
+        <img id="scroll-icon" src={scrollIcon} alt="Scroll Icon"/>
 
         {tooltips.map((name) =>
           <ReactTooltip id={`tooltip-${name}`} className='tooltip'>
-            <span>{name}</span>
+            <span>{name.toUpperCase()}</span>
           </ReactTooltip>
         )}
         <div className="box-shadow"></div>

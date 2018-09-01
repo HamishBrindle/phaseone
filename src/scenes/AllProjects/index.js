@@ -34,6 +34,7 @@ export class AllProjects extends Component {
                 <div className="gallery-container">
                     <div className="gallery-jumbotron">
                         <div>
+                            <img src={require('../../assets/landing-title.svg')} alt="Logo"/>
                             <h1>Projects</h1>
                             <p>Have a look at our previous work, and feel free to contact us with any ideas - we love new ideas.</p>
                             <br/>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import VideoThumbnail from 'react-video-thumbnail'
 
 import './style.css'
 

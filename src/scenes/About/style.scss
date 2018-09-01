@@ -7,6 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .artwork-pixels {
+        display: block;
+        position: absolute;
+        top: 5%;
+        transform: rotateZ(180deg);
+        opacity: 0.5;
+        overflow: hidden;
+    }
     .front-slant {
         position: absolute;
         transform: translateY(-50%);
@@ -48,6 +56,9 @@
     .about-container {
         .artwork {
             width: 100%;
+        }
+        .artwork-pixels {
+            display: none;
         }
     }
 }

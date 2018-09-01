@@ -1,10 +1,18 @@
 @import '../../scss/_shared.scss';
 .projects-container {
-    background-color: $ebb-white;
+    background-color: $ebb-white; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    .artwork-pixels {
+        display: block;
+        position: absolute;
+        top: -1px;
+        transform: rotateZ(180deg);
+        opacity: 0.5;
+        overflow: hidden;
+    }
     .pixels {
         width: 100%;
         object-fit: cover;
@@ -48,7 +56,11 @@
 
 @media (max-width: 1200px) {
 
-    .projects-container {}
+    .projects-container {
+        .artwork-pixels {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 768px) {

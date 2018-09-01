@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 
 import Lottie from 'react-lottie'
 import * as animationData from './data.json'
+import pixels from '../../assets/Contact/contact-pixels.svg'
 
 import Fade from 'react-reveal/Fade';
 
@@ -35,8 +36,8 @@ export class Services extends Component {
 
     return (
       <div id="services" name="services"className="dope-bg services-container">
-        {/* <img className="art-close-pixels" src={closePixels} alt="Close Pixels" />
-        <img className="art-far-pixels" src={farPixels} alt="Close Pixels" /> */}
+        <img className="artwork-pixels" src={pixels} alt="Pixel Art"/>
+
         <div className="content flex-center text-right">
           <div className="content-section">
             <div className="content-section-indicator">

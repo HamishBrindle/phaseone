@@ -2,14 +2,12 @@ import React, { Component } from 'react'
 // eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
 import { Link } from 'react-router-dom'
-
+import Fade from 'react-reveal/Fade'
 import artwork1 from '../../assets/Projects/artwork1.png'
 import artwork2 from '../../assets/Projects/artwork2.png'
 import artwork3 from '../../assets/Projects/artwork3.png'
-
-import Fade from 'react-reveal/Fade'
+import pixels from '../../assets/Projects/project-pixels.svg'
 
 import './style.css'
 
@@ -23,10 +21,11 @@ export class Projects extends Component {
   goToProjects() {
 
   }
-
+ 
   render() {
     return (
       <div id="projects" name="projects" className='dope-bg projects-container'>
+          <img className="artwork-pixels" src={pixels} alt="Pixel Art" />
         {/* <img className="pixels art-far-pixels" src={farPixels} alt="Far Pixels" />
         <img className="pixels art-close-pixels" src={closePixels} alt="Close Pixels" /> */}
         <div className="content flex-center text-right">

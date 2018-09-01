@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 // eslint-disable-next-line
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
+import pixels from '../../assets/Contact/contact-pixels.svg'
+ 
 import './style.css'
 
 export class Contact extends Component {
@@ -13,7 +14,7 @@ export class Contact extends Component {
   render() {
     return (
       <div id="contact" name="contact" className='dope-bg contact-container flex-center'>
-
+        <img className="artwork" src={pixels} alt="Pixel Art"/>
         <div className="content flex-center">
           <div className="content-section text-left">
             <div className="content-section-indicator">

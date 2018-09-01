@@ -3,7 +3,7 @@
 .services-container {
     position: relative;
     background-color: $ebb-white;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     .artwork {
@@ -12,12 +12,21 @@
         max-width: 600px;
         width: 60%;
     }
+    .artwork-pixels {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.5;
+    } 
     
 } // Laptop Screen
 @media (max-width: 1200px) {
     .services-container {
         .artwork {
             width: 100%;
+        }
+        .artwork-pixels {
+            display: none;
         }
     }
 }

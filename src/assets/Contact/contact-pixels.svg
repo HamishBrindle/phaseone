@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 539">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 647">
   <defs>
     <style>
       .cls-1 {
@@ -18,7 +18,7 @@
       }
     </style>
   </defs>
-  <g id="contact-pixels" transform="translate(1580 647) rotate(180)">
+  <g id="contact-pixels" transform="translate(1580 755) rotate(180)">
     <g id="BUILDING-1" transform="translate(-618 -7)">
       <path id="Union_5" data-name="Union 5" class="cls-1" d="M62-855V-963H170v108ZM170-963v-108H278v108Z" transform="translate(216 1187)"/>
     </g>
@@ -31,6 +31,9 @@
     </g>
     <g id="BUILDING-4">
       <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-4" width="108" height="108" transform="translate(1472 539)"/>
+    </g>
+    <g id="BUILDING-4-2" data-name="BUILDING-4" transform="translate(-108 108)">
+      <rect id="Rectangle_33-2" data-name="Rectangle 33" class="cls-4" width="108" height="108" transform="translate(1472 539)"/>
     </g>
   </g>
 </svg>
