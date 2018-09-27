@@ -32,14 +32,14 @@ export class About extends Component {
                                 01
                             </div>
                         </div>
-                        <h2 className="content-section-header">BUILDING BLOCKS</h2>
+                        <h2 className="content-section-header">THE FIRST PHASE</h2>
                         <div className="content-section-body">
                             <p>
-                                Phase One is a marketing firm based out of Vancouver, Canada. Our primary purpose
-                                is bringing an elegant suite of design-tools and services to new companies,
-                                developments, and brands to help find an identity that suits their needs.
+                                Phase One is a Marketing firm Based out of Vancouver. The First Phase is Getting noticed.
+                                Sticking out from the crowd and putting your best foot forward. Starting you with the first
+                                steps to take on the world with your business and Brand Identity.
                                 <br /><br />
-                                Think of our services like the first building blocks of your company's future!
+                                Take a look at our services and all that we offer. Whatever it may be, we do it - and do it well.
                             </p>
                         </div>
                     </div>

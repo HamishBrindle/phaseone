@@ -9,7 +9,7 @@ import Footer from '../../components/Footer'
 import Lightbox from 'lightbox-react';
 
 import './style.css'
-import projects from './projects'
+import newProjects from './projects'
 
 export class AllProjects extends Component {
 
@@ -27,7 +27,9 @@ export class AllProjects extends Component {
         this.setState({ itemIndex: itemIndex, isOpen: true })
     }
 
+
     render() {
+        console.log(newProjects);
         const { itemIndex, isOpen } = this.state
         return (
             <div className="dope-bg wrapper">
@@ -48,7 +50,7 @@ export class AllProjects extends Component {
                             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                         >
                             <Masonry>
-                                {projects.map((project) =>
+                                {newProjects.map((project) =>
                                     <MasonryItem key={project.index} project={project} onClick={this.selectMasonryItem} />
                                 )}
                             </Masonry>
@@ -58,18 +60,18 @@ export class AllProjects extends Component {
 
                     {isOpen && (
                         <Lightbox
-                            mainSrc={projects[itemIndex].type === 'video' ? <ReactPlayer url={projects[itemIndex].src} volume={0.75} width='100%' height='100%' /> : projects[itemIndex].src}
-                            nextSrc={projects[(itemIndex + 1) % projects.length].src}
-                            prevSrc={projects[(itemIndex + projects.length - 1) % projects.length].src}
+                            mainSrc={newProjects[itemIndex].type === 'video' ? <ReactPlayer url={newProjects[itemIndex].src} volume={0.75} width='100%' height='100%' /> : newProjects[itemIndex].src}
+                            nextSrc={newProjects[(itemIndex + 1) % newProjects.length].src}
+                            prevSrc={newProjects[(itemIndex + newProjects.length - 1) % newProjects.length].src}
                             onCloseRequest={() => this.setState({ isOpen: false })}
                             onMovePrevRequest={() =>
                                 this.setState({
-                                    itemIndex: (itemIndex + projects.length - 1) % projects.length,
+                                    itemIndex: (itemIndex + newProjects.length - 1) % newProjects.length,
                                 })
                             }
                             onMoveNextRequest={() =>
                                 this.setState({
-                                    itemIndex: (itemIndex + 1) % projects.length,
+                                    itemIndex: (itemIndex + 1) % newProjects.length,
                                 })
                             }
                         />

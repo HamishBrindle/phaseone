@@ -51,9 +51,13 @@ export class Services extends Component {
             <h2 className="content-section-header">SERVICES</h2>
             <div className="content-section-body">
               <p>
-                We offer a wide range of services and expertise. With Phase One,
-                the look and feel of your product will remain constant across the
-                board, giving a cohesive and complete final product.
+                Our team will put together and fine tune a package to fit your needs,
+                with our wide range of expertise and design elements to get you where
+                you need to go. From deciding on a name and logo, building your website,
+                and providing renders, video and photo content to fill your online and boots
+                on the ground presence. Providing materials and design for physical spaces
+                for shops or Sales centers of new developments, signage and more.
+
                 <br/><br/>
                 Let us know what you need and let's get the <strong>gears turning</strong>!
               </p>

@@ -137,8 +137,6 @@ export class HeroParallax extends Component {
           </Parallax>
 
         </div>
-        
-        <img id="scroll-icon" src={scrollIcon} alt="Scroll Icon"/>
 
         {tooltips.map((name) =>
           <ReactTooltip id={`tooltip-${name}`} className='tooltip'>

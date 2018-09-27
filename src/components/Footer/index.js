@@ -2,15 +2,20 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './style.css'
 
-import Facebook from '../../assets/Facebook.png'
-import Instagram from '../../assets/Instagram.png'
-import Twitter from '../../assets/Twitter.png'
-import YouTube from '../../assets/YouTube.png'
+// import Facebook from '../../assets/Facebook.png'
+// import Instagram from '../../assets/Instagram.png'
+// import Twitter from '../../assets/Twitter.png'
+// import YouTube from '../../assets/YouTube.png'
+import Vimeo from '../../assets/vimeo.svg'
+import Instagram from '../../assets/instagram.svg'
+
 import SocialIcon from '../../components/SocialIcon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faMapPin } from '@fortawesome/free-solid-svg-icons'
+
+import * as info from '../../constants'
 
 export default class Footer extends Component {
 
@@ -23,16 +28,14 @@ export default class Footer extends Component {
         ]
 
         const contactInfo = [
-            { icon: faEnvelope, name: "Email", info: "info@phaseonemk2.com" },
-            { icon: faPhone, name: "Phone", info: "(604) 922-9999" },
-            { icon: faMapPin, name: "Address", info: "2837 Fake Street" }
+            { icon: faEnvelope, name: "Email", info: info.EMAIL },
+            { icon: faPhone, name: "Phone", info: info.PHONE_NUMBER },
+            { icon: faMapPin, name: "Address", info: info.ADDRESS }
         ]
 
         const socialIcons = [
-            { name: "Facebook", link: "#", image: Facebook },
-            { name: "Instagram", link: "#", image: Instagram },
-            { name: "Twitter", link: "#", image: Twitter },
-            { name: "YouTube", link: "#", image: YouTube },
+            { name: "Instagram", link: "https://www.instagram.com/phaseonemkt/", image: Instagram },
+            { name: "Vimeo", link: "#", image: Vimeo },
         ]
 
         const year = new Date().getFullYear()
@@ -47,10 +50,12 @@ export default class Footer extends Component {
                     <div className="section-item">
                         <h3>Useful Links</h3>
                         <ul>
-                            {usefulLinks.map((link) => 
-                                <li key={link.name}>
-                                    <Link to={link.path}>{link.name}</Link>
+                            {usefulLinks.map((link) => {
+                                const l = (!link.path.includes('http')) ? <Link to={link.path}>{link.name}</Link> : <a href={link.path}>{link.name}</a>
+                                return <li key={link.name}>
+                                    {l}
                                 </li>
+                            }
                             )}
                         </ul>
                     </div>
@@ -58,7 +63,7 @@ export default class Footer extends Component {
                     <div className="section-item">
                         <h3>Contact</h3>
                         <ul>
-                            {contactInfo.map((item) => 
+                            {contactInfo.map((item) =>
                                 <li key={item.name} className="contact-item">
                                     <p><strong><FontAwesomeIcon icon={item.icon} /></strong> {item.info}</p>
                                 </li>
@@ -77,7 +82,7 @@ export default class Footer extends Component {
                 <hr/> */}
                 <div className="section">
                     <div className="social">
-                        {socialIcons.map((icon) => 
+                        {socialIcons.map((icon) =>
                             <SocialIcon image={icon.image} name={icon.name} link={icon.link} />
                         )}
                     </div>
