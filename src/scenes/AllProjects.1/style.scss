@@ -1,0 +1,67 @@
+@import '../../scss/_shared.scss';
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .gallery-jumbotron {
+        position: relative;
+        width: 100%;
+        background: $ebony-clay;
+        padding: 36px 16px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        overflow: hidden;
+        div {
+            max-width: 960px;
+            width: 100%;
+        }
+        h1 {
+            color: $ebb-white;
+            margin-bottom: 0;
+        }
+        p {
+            color: $ebb-white;            
+            display: inline-block;
+            max-width: 500px;
+        }
+        button {
+            display: inline-block;
+            margin: 0;
+        }
+        a {            
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        img {
+            height: 100%;
+            position: absolute;
+            bottom: -25%;
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            opacity: 0.025;
+            pointer-events: none;
+        }
+    }
+    .gallery-content {
+        width: 100%;
+        max-width: 960px;
+        
+    }
+    @media (max-width: 1200px) {
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 414px) {
+    }
+    @media (max-width: 375px) {
+    }
+}

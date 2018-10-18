@@ -23,7 +23,7 @@ export class Video extends Component {
     return (
       <div id="video" name="video" className="video-container">
         <ServicesNavigation parent="video" />
-      
+
           <Parallax
             className="floating-pixels vertical-flip"
             offsetYMax={30}
@@ -34,12 +34,12 @@ export class Video extends Component {
             {/* <div className="floating-pixels close"></div> */}
           </Parallax>
           <Parallax
-            className="floating-pixels vertical-flip"          
+            className="floating-pixels vertical-flip"
             offsetYMax={10}
             offsetYMin={-10}
             slowerScrollRate
           >
-            <img src={farPixels} alt="Far Pixels"/>            
+            <img src={farPixels} alt="Far Pixels"/>
             {/* <div className="floating-pixels far"></div> */}
           </Parallax>
         {/* <ServicesNavigation parent="video" /> */}
@@ -61,12 +61,15 @@ export class Video extends Component {
                 Our videos are beautiful works of art and expression packaged elegantly
                 inside your brand identity. Let us create something unique for you,
                 that will capture your customers attention and interest.
+
+                Enjoy some work of ours via Vimeo!
               </p>
+              <a href="https://vimeo.com/tnorthstudios"><button className="button-light">vimeo</button></a>
             </div>
           </div>
           <Fade bottom>
             <div className="artwork">
-              <ReactPlayer url='https://vimeo.com/252632691' volume={0.5} muted width='100%' height='100%' />
+              <ReactPlayer url='https://vimeo.com/252982629' volume={0.5} muted width='100%' height='100%' />
             </div>
           </Fade>
         </div>

@@ -13,7 +13,7 @@ import Fade from 'react-reveal/Fade';
 
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
-import artwork from '../../../../assets/Web/artwork.png'
+import artwork from '../../../../assets/Web/artwork.jpg'
 
 export class Web extends Component {
   //   static propTypes = {
@@ -34,12 +34,12 @@ export class Web extends Component {
             {/* <div className="floating-pixels close"></div> */}
           </Parallax>
           <Parallax
-            className="floating-pixels horizontal-flip"          
+            className="floating-pixels horizontal-flip"
             offsetYMax={10}
             offsetYMin={-10}
             slowerScrollRate
           >
-            <img src={farPixels} alt="Far Pixels"/>            
+            <img src={farPixels} alt="Far Pixels"/>
             {/* <div className="floating-pixels far"></div> */}
           </Parallax>
         <div className="content flex-center">
@@ -55,9 +55,9 @@ export class Web extends Component {
             <h2 className="content-section-header">WEB DESIGN</h2>
             <div className="content-section-body">
               <p>
-                A website is crucial in the gaining and maintaining of customers - 
-                it's your companies portal to the world! Therefore its of the utmost 
-                importance you 'wow' everyone who comes through, all the while educating 
+                A website is crucial in the gaining and maintaining of customers -
+                it's your companies portal to the world! Therefore its of the utmost
+                importance you 'wow' everyone who comes through, all the while educating
                 them on your business and what it is you can do for them. We can help with this.
               </p>
             </div>
@@ -65,10 +65,10 @@ export class Web extends Component {
           <Fade bottom>
             <div className="artwork">
               {/* <div className="underlay drop-shadow-far"></div> */}
-              <img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" />
+              <a href="http://520southboroughdr.ca/"><img className="content-artwork drop-shadow-close" src={artwork} alt="Artwork" /></a>
             </div>
           </Fade>
-        </div> 
+        </div>
       </div>
     )
   }

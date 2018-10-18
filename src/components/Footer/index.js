@@ -35,7 +35,7 @@ export default class Footer extends Component {
 
         const socialIcons = [
             { name: "Instagram", link: "https://www.instagram.com/phaseonemkt/", image: Instagram },
-            { name: "Vimeo", link: "#", image: Vimeo },
+            { name: "Vimeo", link: "https://vimeo.com/tnorthstudios", image: Vimeo },
         ]
 
         const year = new Date().getFullYear()

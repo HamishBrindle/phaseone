@@ -9,9 +9,12 @@ import { Parallax } from 'react-scroll-parallax';
 import farPixels from '../../../../assets/Photo/pixels-background.svg'
 import closePixels from '../../../../assets/Photo/pixels-midground.svg'
 
-import artwork1 from '../../../../assets/Photo/photo-artwork.png'
-import artwork2 from '../../../../assets/Video/video-artwork.png'
-import artwork3 from '../../../../assets/Web/artwork.png'
+import artwork1 from '../../../../assets/stefanimages/Cityscape-1.jpg'
+import artwork2 from '../../../../assets/stefanimages/Cityscape-4.jpg'
+import artwork3 from '../../../../assets/stefanimages/Cityscape-3.jpg'
+import artwork4 from '../../../../assets/stefanimages/Science-World.jpg'
+import artwork5 from '../../../../assets/stefanimages/Vancouver-Street.jpg'
+import artwork6 from '../../../../assets/stefanimages/House.jpg'
 
 import Fade from 'react-reveal/Fade';
 
@@ -25,9 +28,12 @@ export class Photo extends Component {
     const sliderImages = [
       artwork1,
       artwork2,
-      artwork3
+      artwork3,
+      artwork4,
+      artwork5,
+      artwork6,
     ]
-    
+
     return (
       <div id="photo" name="photo" className="photo-container">
         <ServicesNavigation parent="photo" />
@@ -41,12 +47,12 @@ export class Photo extends Component {
             {/* <div className="floating-pixels close"></div> */}
           </Parallax>
           <Parallax
-            className="floating-pixels"          
+            className="floating-pixels"
             offsetYMax={10}
             offsetYMin={-10}
             slowerScrollRate
           >
-            <img src={farPixels} alt="Far Pixels"/>            
+            <img src={farPixels} alt="Far Pixels"/>
             {/* <div className="floating-pixels far"></div> */}
           </Parallax>
         <div className="content flex-center">

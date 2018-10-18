@@ -3,7 +3,7 @@ import './style.css'
 import { connect } from 'react-redux'
 
 // import { NavLink } from 'react-router-dom'
-import logo from '../../assets/Navigation/nav-brand.svg'
+import logo from '../../assets/Navigation/no-type.svg'
 import menu from '../../assets/Navigation/nav-menu.svg'
 import exit from '../../assets/Navigation/nav-exit.svg'
 
@@ -13,7 +13,7 @@ import { showMenu, hideMenu } from '../../redux/actions'
 
 class Navigation extends Component {
 
-  
+
   componentDidMount() {
     scrollSpy.update();
   }
@@ -68,9 +68,9 @@ class Navigation extends Component {
         <div className={(this.props.open) ? "underlay underlay-active" : "underlay"}></div>
         <div className={(this.props.open) ? "slider slider-active" : "slider"}>
           <div className="slider-navigation">
-            { links.map((link) => 
-              <Link 
-                key={link} 
+            { links.map((link) =>
+              <Link
+                key={link}
                 className="slider-navigation-link"
                 activeClass="active"
                 onClick={this.props.hideMenu}

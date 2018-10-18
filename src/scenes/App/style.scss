@@ -53,6 +53,7 @@ textarea:focus {
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
+  opacity: 0.2;
 }
 
 .close {
@@ -204,6 +205,7 @@ textarea:focus {
   margin: 24px 0 0 0;
   background: $ebony-clay;
   color: $ebb-white;
+  min-width: 150px;
   min-height: 50px;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
@@ -219,14 +221,15 @@ textarea:focus {
   border: 4px solid $ebb-white;
   margin: 24px 0 0 0;
   background: $ebb-white;
-  color: $ebony-clay;
+  color: $ebony-clay !important;
   min-height: 50px;
+  min-width: 150px;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
 
 .button-light:hover {
-  color: $ebb-white;
+  color: $ebb-white !important;
   background: transparent;
   transition: all 0.25s ease-in-out;
 }
